@@ -4,7 +4,7 @@ header("Content-Type: application/json; charset=UTF-8");
 $curl = curl_init();
 
 curl_setopt_array($curl, array(
-  CURLOPT_URL => 'https://platform.antares.id:8443/~/antares-cse/antares-id/Inflects/Poppeye',
+  CURLOPT_URL => 'https://platform.antares.id:8443/~/antares-cse/antares-id/Inflects/Poppeye/la',
   CURLOPT_RETURNTRANSFER => true,
   CURLOPT_ENCODING => '',
   CURLOPT_MAXREDIRS => 10,
