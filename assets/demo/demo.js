@@ -471,7 +471,7 @@ demo = {
 		var now = new Date().getTime() / 1000;
 		$.ajax(settings).done(function (response) {
 		  // var data = JSON.parse(response);
-		  console.log(response);
+		  //console.log(response);
 		  console.log(JSON.parse(response).data.ldr);
 		  // console.log(now - response.time_id);
       //TEST DELIMITER PISAHIN STRING PAKEK COMMA
