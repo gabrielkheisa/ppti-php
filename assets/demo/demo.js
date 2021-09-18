@@ -423,8 +423,8 @@ demo = {
 
 
 
-    var chart_labels = [0];
-    var chart_data = [0];
+    var chart_data = [0,0,0,0,0,0,0,0,0,0,0,0,0];
+    var chart_labels = [0,1,2,3,4,5,6,7,8,9,10,11,12];
 
 
     var ctx = document.getElementById("chartBig1").getContext('2d');
@@ -474,8 +474,8 @@ demo = {
 		  console.log(response);
 		  console.log(JSON.parse(response).data.ldr);
 		  // console.log(now - response.time_id);
-		  chart_labels.push(chart_labels[chart_labels.length - 1]+1);
-		  chart_data.push(JSON.parse(response).data.ldr);
+		  chart_data.unshift(JSON.parse(response).data.ldr);
+		  chart_data.pop();
 		  myChartData.update();
 		  // if(now - response.time_id >= 60){
 			  // $('#temp').text("--.-");
