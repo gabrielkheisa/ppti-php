@@ -1,8 +1,8 @@
 type = ['primary', 'info', 'success', 'warning', 'danger'];
 
 demo = {
-  initPickColor: function() {
-    $('.pick-class-label').click(function() {
+  initPickColor: function () {
+    $('.pick-class-label').click(function () {
       var new_class = $(this).attr('new-class');
       var old_class = $('#display-buttons').attr('data-class');
       var display_div = $('#display-buttons');
@@ -15,7 +15,7 @@ demo = {
     });
   },
 
-  initDocChart: function() {
+  initDocChart: function () {
     chartColor = "#FFFFFF";
 
     // General configuration for the charts with Line gradientStroke
@@ -106,7 +106,7 @@ demo = {
     });
   },
 
-  initDashboardPageCharts: function() {
+  initDashboardPageCharts: function () {
 
     gradientChartOptionsConfigurationWithTooltipBlue = {
       maintainAspectRatio: false,
@@ -423,8 +423,8 @@ demo = {
 
 
 
-    var chart_data = [0,0,0,0,0,0,0,0,0,0,0,0,0];
-    var chart_labels = [0,1,2,3,4,5,6,7,8,9,10,11,12];
+    var chart_data = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
+    var chart_labels = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12];
 
 
     var ctx = document.getElementById("chartBig1").getContext('2d');
@@ -459,51 +459,51 @@ demo = {
       options: gradientChartOptionsConfigurationWithTooltipPurple
     };
     var myChartData = new Chart(ctx, config);
-	
-	var settings = {
-	  "url": "https://ppti-inf.herokuapp.com/GET/",
-	  "method": "GET",
-	  "timeout": 0,
-	};
 
-	var tid = setInterval(get_data, 2000);
-	function get_data() {
-		var now = new Date().getTime() / 1000;
-		$.ajax(settings).done(function (response) {
-		   var data = JSON.parse(response).data.ldr;
-		  console.log(data);
+    var settings = {
+      "url": "https://ppti-inf.herokuapp.com/GET/",
+      "method": "GET",
+      "timeout": 0,
+    };
 
-		  //console.log(JSON.parse(response).data.ldr);
-		  // console.log(now - response.time_id);
-      //TEST DELIMITER PISAHIN STRING PAKEK COMMA
-      var datamasuk = String(data);
-      var fields = datamasuk.split(',');
-      var lat = fields[0];
-      var lon = fields[1];
-      var alt = fields[2];
-      var temp = fields[3];
-      var hum = fields[4];
-		  chart_data.unshift(temp);
-		  chart_data.pop();
-		  myChartData.update();
-		  // if(now - response.time_id >= 60){
-			  // $('#temp').text("--.-");
-		  // }
-		  // else{
-			// $('#temp').text(response.temp);
-		  // }
-		});
-	}
-	function abortTimer() { // to be called when you want to stop the timer
-	  clearInterval(tid);
-	}
-    $("#0").click(function() {
+    var tid = setInterval(get_data, 2000);
+    function get_data() {
+      var now = new Date().getTime() / 1000;
+      $.ajax(settings).done(function (response) {
+        var data = JSON.parse(response).data;
+        console.log(data);
+
+        //console.log(JSON.parse(response).data.ldr);
+        // console.log(now - response.time_id);
+        //TEST DELIMITER PISAHIN STRING PAKEK COMMA
+        var datamasuk = String(data);
+        var fields = datamasuk.split(',');
+        var lat = fields[0];
+        var lon = fields[1];
+        var alt = fields[2];
+        var temp = fields[3];
+        var hum = fields[4];
+        chart_data.unshift(temp);
+        chart_data.pop();
+        myChartData.update();
+        // if(now - response.time_id >= 60){
+        // $('#temp').text("--.-");
+        // }
+        // else{
+        // $('#temp').text(response.temp);
+        // }
+      });
+    }
+    function abortTimer() { // to be called when you want to stop the timer
+      clearInterval(tid);
+    }
+    $("#0").click(function () {
       var data = myChartData.config.data;
       data.datasets[0].data = chart_data;
       data.labels = chart_labels;
       myChartData.update();
     });
-    $("#1").click(function() {
+    $("#1").click(function () {
       var chart_data = [80, 120, 105, 110, 95, 105, 90, 100, 80, 95, 70, 120];
       var data = myChartData.config.data;
       data.datasets[0].data = chart_data;
@@ -511,7 +511,7 @@ demo = {
       myChartData.update();
     });
 
-    $("#2").click(function() {
+    $("#2").click(function () {
       var chart_data = [60, 80, 65, 130, 80, 105, 90, 130, 70, 115, 60, 130];
       var data = myChartData.config.data;
       data.datasets[0].data = chart_data;
@@ -554,198 +554,198 @@ demo = {
 
   },
 
-  initGoogleMaps: function() {
+  initGoogleMaps: function () {
     var myLatlng = new google.maps.LatLng(40.748817, -73.985428);
     var mapOptions = {
       zoom: 13,
       center: myLatlng,
       scrollwheel: false, //we disable de scroll over the map, it is a really annoing when you scroll through page
       styles: [{
-          "elementType": "geometry",
-          "stylers": [{
-            "color": "#1d2c4d"
-          }]
-        },
-        {
-          "elementType": "labels.text.fill",
-          "stylers": [{
-            "color": "#8ec3b9"
-          }]
-        },
-        {
-          "elementType": "labels.text.stroke",
-          "stylers": [{
-            "color": "#1a3646"
-          }]
-        },
-        {
-          "featureType": "administrative.country",
-          "elementType": "geometry.stroke",
-          "stylers": [{
-            "color": "#4b6878"
-          }]
-        },
-        {
-          "featureType": "administrative.land_parcel",
-          "elementType": "labels.text.fill",
-          "stylers": [{
-            "color": "#64779e"
-          }]
-        },
-        {
-          "featureType": "administrative.province",
-          "elementType": "geometry.stroke",
-          "stylers": [{
-            "color": "#4b6878"
-          }]
-        },
-        {
-          "featureType": "landscape.man_made",
-          "elementType": "geometry.stroke",
-          "stylers": [{
-            "color": "#334e87"
-          }]
-        },
-        {
-          "featureType": "landscape.natural",
-          "elementType": "geometry",
-          "stylers": [{
-            "color": "#023e58"
-          }]
-        },
-        {
-          "featureType": "poi",
-          "elementType": "geometry",
-          "stylers": [{
-            "color": "#283d6a"
-          }]
-        },
-        {
-          "featureType": "poi",
-          "elementType": "labels.text.fill",
-          "stylers": [{
-            "color": "#6f9ba5"
-          }]
-        },
-        {
-          "featureType": "poi",
-          "elementType": "labels.text.stroke",
-          "stylers": [{
-            "color": "#1d2c4d"
-          }]
-        },
-        {
-          "featureType": "poi.park",
-          "elementType": "geometry.fill",
-          "stylers": [{
-            "color": "#023e58"
-          }]
-        },
-        {
-          "featureType": "poi.park",
-          "elementType": "labels.text.fill",
-          "stylers": [{
-            "color": "#3C7680"
-          }]
-        },
-        {
-          "featureType": "road",
-          "elementType": "geometry",
-          "stylers": [{
-            "color": "#304a7d"
-          }]
-        },
-        {
-          "featureType": "road",
-          "elementType": "labels.text.fill",
-          "stylers": [{
-            "color": "#98a5be"
-          }]
-        },
-        {
-          "featureType": "road",
-          "elementType": "labels.text.stroke",
-          "stylers": [{
-            "color": "#1d2c4d"
-          }]
-        },
-        {
-          "featureType": "road.highway",
-          "elementType": "geometry",
-          "stylers": [{
-            "color": "#2c6675"
-          }]
-        },
-        {
-          "featureType": "road.highway",
-          "elementType": "geometry.fill",
-          "stylers": [{
-            "color": "#9d2a80"
-          }]
-        },
-        {
-          "featureType": "road.highway",
-          "elementType": "geometry.stroke",
-          "stylers": [{
-            "color": "#9d2a80"
-          }]
-        },
-        {
-          "featureType": "road.highway",
-          "elementType": "labels.text.fill",
-          "stylers": [{
-            "color": "#b0d5ce"
-          }]
-        },
-        {
-          "featureType": "road.highway",
-          "elementType": "labels.text.stroke",
-          "stylers": [{
-            "color": "#023e58"
-          }]
-        },
-        {
-          "featureType": "transit",
-          "elementType": "labels.text.fill",
-          "stylers": [{
-            "color": "#98a5be"
-          }]
-        },
-        {
-          "featureType": "transit",
-          "elementType": "labels.text.stroke",
-          "stylers": [{
-            "color": "#1d2c4d"
-          }]
-        },
-        {
-          "featureType": "transit.line",
-          "elementType": "geometry.fill",
-          "stylers": [{
-            "color": "#283d6a"
-          }]
-        },
-        {
-          "featureType": "transit.station",
-          "elementType": "geometry",
-          "stylers": [{
-            "color": "#3a4762"
-          }]
-        },
-        {
-          "featureType": "water",
-          "elementType": "geometry",
-          "stylers": [{
-            "color": "#0e1626"
-          }]
-        },
-        {
-          "featureType": "water",
-          "elementType": "labels.text.fill",
-          "stylers": [{
-            "color": "#4e6d70"
-          }]
-        }
+        "elementType": "geometry",
+        "stylers": [{
+          "color": "#1d2c4d"
+        }]
+      },
+      {
+        "elementType": "labels.text.fill",
+        "stylers": [{
+          "color": "#8ec3b9"
+        }]
+      },
+      {
+        "elementType": "labels.text.stroke",
+        "stylers": [{
+          "color": "#1a3646"
+        }]
+      },
+      {
+        "featureType": "administrative.country",
+        "elementType": "geometry.stroke",
+        "stylers": [{
+          "color": "#4b6878"
+        }]
+      },
+      {
+        "featureType": "administrative.land_parcel",
+        "elementType": "labels.text.fill",
+        "stylers": [{
+          "color": "#64779e"
+        }]
+      },
+      {
+        "featureType": "administrative.province",
+        "elementType": "geometry.stroke",
+        "stylers": [{
+          "color": "#4b6878"
+        }]
+      },
+      {
+        "featureType": "landscape.man_made",
+        "elementType": "geometry.stroke",
+        "stylers": [{
+          "color": "#334e87"
+        }]
+      },
+      {
+        "featureType": "landscape.natural",
+        "elementType": "geometry",
+        "stylers": [{
+          "color": "#023e58"
+        }]
+      },
+      {
+        "featureType": "poi",
+        "elementType": "geometry",
+        "stylers": [{
+          "color": "#283d6a"
+        }]
+      },
+      {
+        "featureType": "poi",
+        "elementType": "labels.text.fill",
+        "stylers": [{
+          "color": "#6f9ba5"
+        }]
+      },
+      {
+        "featureType": "poi",
+        "elementType": "labels.text.stroke",
+        "stylers": [{
+          "color": "#1d2c4d"
+        }]
+      },
+      {
+        "featureType": "poi.park",
+        "elementType": "geometry.fill",
+        "stylers": [{
+          "color": "#023e58"
+        }]
+      },
+      {
+        "featureType": "poi.park",
+        "elementType": "labels.text.fill",
+        "stylers": [{
+          "color": "#3C7680"
+        }]
+      },
+      {
+        "featureType": "road",
+        "elementType": "geometry",
+        "stylers": [{
+          "color": "#304a7d"
+        }]
+      },
+      {
+        "featureType": "road",
+        "elementType": "labels.text.fill",
+        "stylers": [{
+          "color": "#98a5be"
+        }]
+      },
+      {
+        "featureType": "road",
+        "elementType": "labels.text.stroke",
+        "stylers": [{
+          "color": "#1d2c4d"
+        }]
+      },
+      {
+        "featureType": "road.highway",
+        "elementType": "geometry",
+        "stylers": [{
+          "color": "#2c6675"
+        }]
+      },
+      {
+        "featureType": "road.highway",
+        "elementType": "geometry.fill",
+        "stylers": [{
+          "color": "#9d2a80"
+        }]
+      },
+      {
+        "featureType": "road.highway",
+        "elementType": "geometry.stroke",
+        "stylers": [{
+          "color": "#9d2a80"
+        }]
+      },
+      {
+        "featureType": "road.highway",
+        "elementType": "labels.text.fill",
+        "stylers": [{
+          "color": "#b0d5ce"
+        }]
+      },
+      {
+        "featureType": "road.highway",
+        "elementType": "labels.text.stroke",
+        "stylers": [{
+          "color": "#023e58"
+        }]
+      },
+      {
+        "featureType": "transit",
+        "elementType": "labels.text.fill",
+        "stylers": [{
+          "color": "#98a5be"
+        }]
+      },
+      {
+        "featureType": "transit",
+        "elementType": "labels.text.stroke",
+        "stylers": [{
+          "color": "#1d2c4d"
+        }]
+      },
+      {
+        "featureType": "transit.line",
+        "elementType": "geometry.fill",
+        "stylers": [{
+          "color": "#283d6a"
+        }]
+      },
+      {
+        "featureType": "transit.station",
+        "elementType": "geometry",
+        "stylers": [{
+          "color": "#3a4762"
+        }]
+      },
+      {
+        "featureType": "water",
+        "elementType": "geometry",
+        "stylers": [{
+          "color": "#0e1626"
+        }]
+      },
+      {
+        "featureType": "water",
+        "elementType": "labels.text.fill",
+        "stylers": [{
+          "color": "#4e6d70"
+        }]
+      }
       ]
     };
 
@@ -760,7 +760,7 @@ demo = {
     marker.setMap(map);
   },
 
-  showNotification: function(from, align) {
+  showNotification: function (from, align) {
     color = Math.floor((Math.random() * 4) + 1);
 
     $.notify({
