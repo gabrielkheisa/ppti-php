@@ -475,7 +475,7 @@ demo = {
 		  console.log(JSON.parse(response).data.ldr);
 		  // console.log(now - response.time_id);
       //TEST DELIMITER PISAHIN STRING PAKEK COMMA
-      var datamasuk = JSON.parse(response).data.ldr;
+      var datamasuk = String(JSON.parse(response).data.ldr);
       var fields = datamasuk.split(',');
       var lat = fields[0];
       var lon = fields[1];
