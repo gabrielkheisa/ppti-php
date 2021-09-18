@@ -461,7 +461,7 @@ demo = {
     var myChartData = new Chart(ctx, config);
 	
 	var settings = {
-	  "url": "https://inflectsxantares.herokuapp.com/GET/",
+	  "url": "https://ppti-inf.herokuapp.com/GET/",
 	  "method": "GET",
 	  "timeout": 0,
 	};
