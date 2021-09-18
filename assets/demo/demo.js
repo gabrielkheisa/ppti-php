@@ -472,7 +472,7 @@ demo = {
 		$.ajax(settings).done(function (response) {
 		   var data = JSON.parse(response);
 		  //console.log(response);
-		  console.log(JSON.parse(response).data.ldr);
+		  console.log(JSON.parse(response).data);
 		  // console.log(now - response.time_id);
       //TEST DELIMITER PISAHIN STRING PAKEK COMMA
       var datamasuk = String(JSON.parse(response).data.ldr);
