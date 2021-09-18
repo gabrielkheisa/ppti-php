@@ -474,7 +474,15 @@ demo = {
 		  console.log(response);
 		  console.log(JSON.parse(response).data.ldr);
 		  // console.log(now - response.time_id);
-		  chart_data.unshift(JSON.parse(response).data.ldr);
+      //TEST DELIMITER PISAHIN STRING PAKEK COMMA
+      var datamasuk = JSON.parse(response).data.ldr;
+      var fields = datamasuk.split(',');
+      var lat = fields[0];
+      var lon = fields[1];
+      var alt = fields[2];
+      var temp = fields[3];
+      var hum = fields[4];
+		  chart_data.unshift(temp);
 		  chart_data.pop();
 		  myChartData.update();
 		  // if(now - response.time_id >= 60){
