@@ -357,10 +357,11 @@ demo = {
     gradientStroke.addColorStop(0.2, 'rgba(72,72,176,0.0)');
     gradientStroke.addColorStop(0, 'rgba(119,52,169,0)'); //purple colors
 
+    //KONFIGURASI CHART KELEMBAPAN
     var data = {
-      labels: ['JUL', 'AUG', 'SEP', 'OCT', 'NOV', 'DEC'],
+      labels: ['0', '2', '4', '6', '8', '10'],
       datasets: [{
-        label: "Data",
+        label: "Kelembapan",
         fill: true,
         backgroundColor: gradientStroke,
         borderColor: '#d048b6',
@@ -374,7 +375,7 @@ demo = {
         pointHoverRadius: 4,
         pointHoverBorderWidth: 15,
         pointRadius: 4,
-        data: [80, 100, 70, 80, 120, 80],
+        data: chart_data2,
       }]
     };
 
@@ -424,6 +425,7 @@ demo = {
 
 
     var chart_data = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
+    var chart_data2 = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
     var chart_labels = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12];
 
 
@@ -434,12 +436,14 @@ demo = {
     gradientStroke.addColorStop(1, 'rgba(72,72,176,0.1)');
     gradientStroke.addColorStop(0.4, 'rgba(72,72,176,0.0)');
     gradientStroke.addColorStop(0, 'rgba(119,52,169,0)'); //purple colors
+    
+    //KONFIGURASI CHART SUHU
     var config = {
       type: 'line',
       data: {
         labels: chart_labels,
         datasets: [{
-          label: "My First dataset",
+          label: "Suhu",
           fill: true,
           backgroundColor: gradientStroke,
           borderColor: '#d346b1',
@@ -485,6 +489,8 @@ demo = {
         var hum = fields[4];
         chart_data.unshift(temp);
         chart_data.pop();
+        chart_data2.unshift(hum);
+        chart_data2.pop();
         myChartData.update();
         // if(now - response.time_id >= 60){
         // $('#temp').text("--.-");
@@ -494,6 +500,7 @@ demo = {
         // }
       });
     }
+
     function abortTimer() { // to be called when you want to stop the timer
       clearInterval(tid);
     }
