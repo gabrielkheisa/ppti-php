@@ -477,7 +477,7 @@ demo = {
         // console.log(now - response.time_id);
         //TEST DELIMITER PISAHIN STRING PAKEK COMMA
         var datamasuk = String(data);
-        var fields = datamasuk.split(',');
+        var fields = datamasuk.split('$');
         var lat = fields[0];
         var lon = fields[1];
         var alt = fields[2];
