@@ -518,6 +518,7 @@ demo = {
     }
 
     //OPENSTREETMAPS
+    /*
     var element4 = document.getElementById('osm-map');
     var map = L.map(element4);
     L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
@@ -526,6 +527,7 @@ demo = {
     var target = L.latLng(lat, lon);
     map.setView(target, 14);
     L.marker(target).addTo(map);
+    */
 
     function abortTimer() { // to be called when you want to stop the timer
       clearInterval(tid);
