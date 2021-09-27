@@ -774,14 +774,7 @@
   </script>
 
   <script>
-  var element4 = document.getElementById('osm-map');
-  var map = L.map(element4);
-  L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
-          attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
-          }).addTo(map);
-  var target = L.latLng(lat, lon);
-  map.setView(target, 14);
-  L.marker(target).addTo(map);
+
   </script>
 
 </body>
