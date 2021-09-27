@@ -500,11 +500,11 @@ demo = {
 
         //LABEL OPEN STREET MAPS
         // Where you want to render the map.
-        var element = document.getElementById('osm-map');
+        var element4 = document.getElementById('osm-map');
         // Height has to be set. You can do this in CSS too.
         //element.style = 'height:300px;';
         // Create Leaflet map on map element.
-        var map = L.map(element);
+        var map = L.map(element4);
         // Add OSM tile layer to the Leaflet map.
         L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
           attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
