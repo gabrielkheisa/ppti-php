@@ -198,7 +198,6 @@
                     <h5 class="card-category">Temperature</h5>
                     <h2 class="card-title">in degree celcius<br></h2>
                     <h3 id="teks-tabel"></h3>
-                    <h3 class="card-title">&deg;C</h2>
                   </div>
                   <div class="col-sm-6">
                     <div class="btn-group btn-group-toggle float-right" data-toggle="buttons">
@@ -240,7 +239,7 @@
             <div class="card card-chart">
               <div class="card-header">
                 <h5 class="card-category">Humidity</h5>
-                <h3 class="card-title"><i class="tim-icons icon-bell-55 text-primary"></i> 763,215</h3>
+                <h3 class="card-title"><i class="tim-icons icon-bell-55 text-primary"></i><div id="teks-tabel2"></div></h3>
               </div>
               <div class="card-body">
                 <div class="chart-area">
@@ -253,7 +252,7 @@
             <div class="card card-chart">
               <div class="card-header">
                 <h5 class="card-category">Daily Sales</h5>
-                <h3 class="card-title"><i class="tim-icons icon-delivery-fast text-info"></i> 3,500€</h3>
+                <h3 class="card-title"><i class="tim-icons icon-delivery-fast text-info"></i><div id="teks-tabel3"></div></h3>
               </div>
               <div class="card-body">
                 <div class="chart-area">

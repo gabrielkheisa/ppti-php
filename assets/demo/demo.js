@@ -491,6 +491,12 @@ demo = {
         const element = document.getElementById("teks-tabel");
         element.innerHTML = temp;
 
+        const element = document.getElementById("teks-tabel2");
+        element.innerHTML = hum;
+
+        const element = document.getElementById("teks-tabel3");
+        element.innerHTML = alt;
+
         chart_data.unshift(temp);
         chart_data.pop();
         chart_data2.unshift(hum);
