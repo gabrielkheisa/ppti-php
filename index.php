@@ -41,7 +41,7 @@
 
 <body class="">
 
-<script src="https://www.openlayers.org/api/OpenLayers.js"></script>
+<script src="assets/js/openstreetmaps.jss"></script>
 
   <div class="wrapper">
     <div class="sidebar">
