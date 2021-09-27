@@ -41,7 +41,7 @@
 
 <body class="">
 
-<script src="http://www.openlayers.org/api/OpenLayers.js"></script>
+<script src="https://www.openlayers.org/api/OpenLayers.js"></script>
 
   <div class="wrapper">
     <div class="sidebar">
