@@ -252,7 +252,7 @@
           <div class="col-lg-4">
             <div class="card card-chart">
               <div class="card-header">
-                <h5 class="card-category">Daily Sales</h5>
+                <h5 class="card-category">Water Level</h5>
                 <h3 class="card-title"><i class="tim-icons icon-delivery-fast text-info"></i></h3>
                 <h4 id="teks-tabel3"></h4>
               </div>
