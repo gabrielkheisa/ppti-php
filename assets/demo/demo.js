@@ -487,8 +487,7 @@ demo = {
         var alt = fields[2];
         var temp = fields[3];
         var hum = fields[4];
-        
-        //LABEL DATA
+
         const element = document.getElementById("teks-tabel");
         element.innerHTML = temp;
 
@@ -497,10 +496,6 @@ demo = {
 
         const element3 = document.getElementById("teks-tabel3");
         element3.innerHTML = alt;
-
-
-
-
 
         chart_data.unshift(temp);
         chart_data.pop();
@@ -516,18 +511,6 @@ demo = {
         // }
       });
     }
-
-    //OPENSTREETMAPS
-    /*
-    var element4 = document.getElementById('osm-map');
-    var map = L.map(element4);
-    L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
-            attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
-            }).addTo(map);
-    var target = L.latLng(lat, lon);
-    map.setView(target, 14);
-    L.marker(target).addTo(map);
-    */
 
     function abortTimer() { // to be called when you want to stop the timer
       clearInterval(tid);
