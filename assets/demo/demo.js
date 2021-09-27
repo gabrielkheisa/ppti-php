@@ -491,11 +491,11 @@ demo = {
         const element = document.getElementById("teks-tabel");
         element.innerHTML = temp;
 
-        const element = document.getElementById("teks-tabel2");
-        element.innerHTML = hum;
+        const element2 = document.getElementById("teks-tabel2");
+        element2.innerHTML = hum;
 
-        const element = document.getElementById("teks-tabel3");
-        element.innerHTML = alt;
+        const element3 = document.getElementById("teks-tabel3");
+        element3.innerHTML = alt;
 
         chart_data.unshift(temp);
         chart_data.pop();
