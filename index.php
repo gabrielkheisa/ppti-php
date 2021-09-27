@@ -239,7 +239,8 @@
             <div class="card card-chart">
               <div class="card-header">
                 <h5 class="card-category">Humidity</h5>
-                <h3 class="card-title"><i class="tim-icons icon-bell-55 text-primary"></i><div id="teks-tabel2"></div></h3>
+                <h3 class="card-title"><i class="tim-icons icon-bell-55 text-primary"></i></h3>
+                <h4 id="teks-tabel2"></h4>
               </div>
               <div class="card-body">
                 <div class="chart-area">
@@ -252,7 +253,8 @@
             <div class="card card-chart">
               <div class="card-header">
                 <h5 class="card-category">Daily Sales</h5>
-                <h3 class="card-title"><i class="tim-icons icon-delivery-fast text-info"></i><div id="teks-tabel3"></div></h3>
+                <h3 class="card-title"><i class="tim-icons icon-delivery-fast text-info"></i></h3>
+                <h4 id="teks-tabel3"></h4>
               </div>
               <div class="card-body">
                 <div class="chart-area">
