@@ -196,7 +196,9 @@
                 <div class="row">
                   <div class="col-sm-6 text-left">
                     <h5 class="card-category">Temperature</h5>
-                    <h2 class="card-title">in degree celcius</h2>
+                    <h2 class="card-title">in degree celcius<br></h2>
+                    <h3 id="teks-tabel"></h3>
+                    <h3 class="card-title">&deg;C</h2>
                   </div>
                   <div class="col-sm-6">
                     <div class="btn-group btn-group-toggle float-right" data-toggle="buttons">

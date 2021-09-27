@@ -487,11 +487,16 @@ demo = {
         var alt = fields[2];
         var temp = fields[3];
         var hum = fields[4];
-        chart_data.unshift(alt);
+
+        const element = document.getElementById("teks-tabel");
+        element.innerHTML = temp;
+
+        chart_data.unshift(temp);
         chart_data.pop();
         chart_data2.unshift(hum);
         chart_data2.pop();
         myChartData.update();
+
         // if(now - response.time_id >= 60){
         // $('#temp').text("--.-");
         // }
