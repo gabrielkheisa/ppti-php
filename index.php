@@ -36,9 +36,13 @@
   <link href="assets/css/black-dashboard.css?v=1.0.0" rel="stylesheet" />
   <!-- CSS Just for demo purpose, don't include it in your project -->
   <link href="assets/demo/demo.css" rel="stylesheet" />
+
 </head>
 
 <body class="">
+
+<script src="http://www.openlayers.org/api/OpenLayers.js"></script>
+
   <div class="wrapper">
     <div class="sidebar">
       <!--
@@ -275,6 +279,8 @@
                 </div>
               </div>
             </div>
+          <div class="col-lg-4">
+            <div id="osm-map"></div>
           </div>
         </div>
         <div class="row">
