@@ -487,7 +487,7 @@ demo = {
         var alt = fields[2];
         var temp = fields[3];
         var hum = fields[4];
-        chart_data.unshift(temp);
+        chart_data.unshift(alt);
         chart_data.pop();
         chart_data2.unshift(hum);
         chart_data2.pop();
