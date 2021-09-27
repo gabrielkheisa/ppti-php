@@ -269,9 +269,8 @@
           <div class="col-lg-4">
             <div class="card card-chart">
               <div class="card-header">
+               <div id="osm-map"></div>
               </div>
-              
-              <div id="osm-map"></div>
 
             </div>
           </div>
