@@ -487,7 +487,8 @@ demo = {
         var alt = fields[2];
         var temp = fields[3];
         var hum = fields[4];
-
+        
+        //LABEL DATA
         const element = document.getElementById("teks-tabel");
         element.innerHTML = temp;
 
@@ -496,6 +497,26 @@ demo = {
 
         const element3 = document.getElementById("teks-tabel3");
         element3.innerHTML = alt;
+
+        //LABEL OPEN STREET MAPS
+        // Where you want to render the map.
+        var element = document.getElementById('osm-map');
+        // Height has to be set. You can do this in CSS too.
+        //element.style = 'height:300px;';
+        // Create Leaflet map on map element.
+        var map = L.map(element);
+        // Add OSM tile layer to the Leaflet map.
+        L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
+          attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
+          }).addTo(map);
+        // Target's GPS coordinates.
+        var target = L.latLng(lat, lon);
+        // Set map's center to target with zoom 14.
+        map.setView(target, 14);
+        // Place a marker on the same location.
+        L.marker(target).addTo(map);
+
+
 
         chart_data.unshift(temp);
         chart_data.pop();
