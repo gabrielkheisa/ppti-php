@@ -37,8 +37,7 @@
   <!-- CSS Just for demo purpose, don't include it in your project -->
   <link href="assets/demo/demo.css" rel="stylesheet" />
   
-  <!-- OpenStreetMaps Files -->
-<link href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css" rel="stylesheet"/>
+ 
 </head>
 
 <body class="">
