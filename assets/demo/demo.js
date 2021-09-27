@@ -375,7 +375,7 @@ demo = {
         pointHoverRadius: 4,
         pointHoverBorderWidth: 15,
         pointRadius: 4,
-        data: [0, 0, 0, 0, 0, 0],
+        data: chart_data2,
       }]
     };
 
