@@ -36,6 +36,10 @@
   <link href="assets/css/black-dashboard.css?v=1.0.0" rel="stylesheet" />
   <!-- CSS Just for demo purpose, don't include it in your project -->
   <link href="assets/demo/demo.css" rel="stylesheet" />
+  
+  <!-- OpenStreetMaps Files -->
+  <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"></script>
+<link href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css" rel="stylesheet"/>
 </head>
 
 <body class="">
@@ -266,15 +270,10 @@
           <div class="col-lg-4">
             <div class="card card-chart">
               <div class="card-header">
-              <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"></script>
-<link href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css" rel="stylesheet"/>
-<div id="osm-map"></div>
               </div>
-              <div class="card-body">
-                <div class="chart-area">
-                  <canvas id="chartLineGreen"></canvas>
-                </div>
-              </div>
+              
+              <div id="osm-map"></div>
+              
             </div>
           </div>
         </div>
