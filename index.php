@@ -37,9 +37,12 @@
   <!-- CSS Just for demo purpose, don't include it in your project -->
   <link href="assets/demo/demo.css" rel="stylesheet" />
 
+	<link rel="stylesheet" href="https://openlayers.org/en/v4.6.5/css/ol.css" type="text/css">
+	<script src="https://openlayers.org/en/v4.6.5/build/ol.js" type="text/javascript"></script>
+
 </head>
 
-<body class="">
+<body class="" initialize_map(); >
 
 
 
@@ -280,7 +283,7 @@
               </div>
             </div>
           <div class="col-lg-4">
-            <div id="mapdiv"></div>
+            <div id="map"></div>
           </div>
         </div>
         <div class="row">
@@ -778,7 +781,7 @@
         application: "black-dashboard-free"
       });
   </script>
-  <script src="assets\js\openstreetmaps.js"></script>
+  
 </body>
 
 </html>
