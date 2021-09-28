@@ -497,6 +497,12 @@ demo = {
         const element3 = document.getElementById("teks-tabel3");
         element3.innerHTML = alt;
 
+        const element4 = document.getElementById("teks-tabel4");
+        element4.innerHTML = lat;
+
+        const element5 = document.getElementById("teks-tabel5");
+        element5.innerHTML = lon;
+
         chart_data.unshift(temp);
         chart_data.pop();
         chart_data2.unshift(hum);
@@ -512,48 +518,7 @@ demo = {
       });
     }
 
-  /* OSM & OL example code provided by https://mediarealm.com.au/ */
-  var map;
-  var mapLat = lat;
-  var mapLng = lon;
-  var mapDefaultZoom = 10;
-  
-  function initialize_map() {
-    map = new ol.Map({
-      target: "map",
-      layers: [
-          new ol.layer.Tile({
-              source: new ol.source.OSM({
-                    url: "https://a.tile.openstreetmap.org/{z}/{x}/{y}.png"
-              })
-          })
-      ],
-      view: new ol.View({
-          center: ol.proj.fromLonLat([mapLng, mapLat]),
-          zoom: mapDefaultZoom
-      })
-    });
-  }
 
-  function add_map_point(lat, lon) {
-    var vectorLayer = new ol.layer.Vector({
-      source:new ol.source.Vector({
-        features: [new ol.Feature({
-              geometry: new ol.geom.Point(ol.proj.transform([parseFloat(lng), parseFloat(lat)], 'EPSG:4326', 'EPSG:3857')),
-          })]
-      }),
-      style: new ol.style.Style({
-        image: new ol.style.Icon({
-          anchor: [0.5, 0.5],
-          anchorXUnits: "fraction",
-          anchorYUnits: "fraction",
-          src: "https://upload.wikimedia.org/wikipedia/commons/e/ec/RedDot.svg"
-        })
-      })
-    });
-
-    map.addLayer(vectorLayer); 
-  }
 
 
 

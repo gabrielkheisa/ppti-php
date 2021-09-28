@@ -274,7 +274,7 @@
             <div class="card card-chart">
               <div class="card-header">
                 <h5 class="card-category">Location</h5>
-                <h3 class="card-title"><i class="tim-icons icon-send text-success"></i> 12,100K</h3>
+                <h3 class="card-title"><i class="tim-icons icon-send text-success"></i> <p id="teks-tabel4"></p><p>,</p><p id="teks-tabel5"></p>/h3>
               </div>
               <div hidden class="card-body">
                 <div class="chart-area">
