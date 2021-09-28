@@ -69,43 +69,43 @@
           </li>
           <li>
             <a href="./icons.html">
-              <i class="tim-icons icon-atom"></i>
+              <i class="tim-icons icon-atom" hidden></i>
               <p>Icons</p>
             </a>
           </li>
           <li>
             <a href="./map.html">
-              <i class="tim-icons icon-pin"></i>
+              <i class="tim-icons icon-pin" hidden></i>
               <p>Maps</p>
             </a>
           </li>
           <li>
             <a href="./notifications.html">
-              <i class="tim-icons icon-bell-55"></i>
+              <i class="tim-icons icon-bell-55" hidden></i>
               <p>Notifications</p>
             </a>
           </li>
           <li>
             <a href="./user.html">
-              <i class="tim-icons icon-single-02"></i>
+              <i class="tim-icons icon-single-02" hidden></i>
               <p>User Profile</p>
             </a>
           </li>
           <li>
             <a href="./tables.html">
-              <i class="tim-icons icon-puzzle-10"></i>
+              <i class="tim-icons icon-puzzle-10" hidden></i>
               <p>Table List</p>
             </a>
           </li>
           <li>
             <a href="./typography.html">
-              <i class="tim-icons icon-align-center"></i>
+              <i class="tim-icons icon-align-center" hidden></i>
               <p>Typography</p>
             </a>
           </li>
           <li>
             <a href="./rtl.html">
-              <i class="tim-icons icon-world"></i>
+              <i class="tim-icons icon-world" hidden></i>
               <p>RTL Support</p>
             </a>
           </li>
@@ -293,7 +293,7 @@
           </div>
         </div>
         <div class="row">
-          <div class="col-lg-6 col-md-12">
+          <div class="col-lg-6 col-md-12" hidden>
             <div class="card card-tasks">
               <div class="card-header ">
                 <h6 class="title d-inline">Tasks(5)</h6>
@@ -445,7 +445,7 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-6 col-md-12">
+          <div class="col-lg-6 col-md-12" hidden>
             <div class="card ">
               <div class="card-header">
                 <h4 class="card-title"> Simple Table</h4>
