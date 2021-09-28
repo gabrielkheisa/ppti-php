@@ -3,6 +3,7 @@
 
 <html>
     <head>
+    <script src="assets\js\openstreetmaps.js"></script>
     <script src="assets\demo\testosm.js"></script>
         <!-- head definitions go here -->
     </head>
@@ -11,7 +12,7 @@
 
         <div id="mapdiv"></div>
 
-    <script src="assets\js\openstreetmaps.js"></script>
+    
     
 
     </body>
