@@ -514,6 +514,8 @@ demo = {
 
   /* OSM & OL example code provided by https://mediarealm.com.au/ */
   var map;
+  var mapLat = lat;
+  var mapLng = lon;
   var mapDefaultZoom = 10;
   
   function initialize_map() {
