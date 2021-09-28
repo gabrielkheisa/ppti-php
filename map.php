@@ -10,32 +10,10 @@
   <script>
     /* OSM & OL example code provided by https://mediarealm.com.au/ */
 
-    function get_data() {
-      var now = new Date().getTime() / 1000;
-      $.ajax(settings).done(function (response) {
-        var data = JSON.parse(response).data;
-        console.log(data);
-
-        //console.log(JSON.parse(response).data.ldr);
-        // console.log(now - response.time_id);
-        //TEST DELIMITER PISAHIN STRING PAKEK COMMA
-        var datamasuk = String(data);
-        var fields = datamasuk.split(',');
-        var lat = fields[0];
-        var lon = fields[1];
-
-        // if(now - response.time_id >= 60){
-        // $('#temp').text("--.-");
-        // }
-        // else{
-        // $('#temp').text(response.temp);
-        // }
-      });
-    }
 
     var map;
-    var mapLat = lat;
-		var mapLng = lon;
+    var mapLat = -7.7711582;
+		var mapLng = 110.3733500;
     var mapDefaultZoom = 10;
     
     function initialize_map() {
