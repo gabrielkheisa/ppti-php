@@ -778,7 +778,7 @@
         application: "black-dashboard-free"
       });
   </script>
-  <script src="http://www.openlayers.org/api/OpenLayers.js"></script>
+  <script src="https://www.openlayers.org/api/OpenLayers.js"></script>
 </body>
 
 </html>
