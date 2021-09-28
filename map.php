@@ -15,6 +15,9 @@
     var mapLat = -7.7711582;
 		var mapLng = 110.3733500;
     var mapDefaultZoom = 10;
+
+    var lat = mapLat;
+    var lon = mapLng;
     
     function initialize_map() {
       map = new ol.Map({
@@ -31,9 +34,8 @@
             zoom: mapDefaultZoom
         })
       });
-    }
 
-    function add_map_point(lat, lng) {
+         
       var vectorLayer = new ol.layer.Vector({
         source:new ol.source.Vector({
           features: [new ol.Feature({
@@ -51,7 +53,10 @@
       });
 
       map.addLayer(vectorLayer); 
+    
+
     }
+
 
 
   </script>
