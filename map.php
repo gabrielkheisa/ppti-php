@@ -9,9 +9,33 @@
   
   <script>
     /* OSM & OL example code provided by https://mediarealm.com.au/ */
+
+    function get_data() {
+      var now = new Date().getTime() / 1000;
+      $.ajax(settings).done(function (response) {
+        var data = JSON.parse(response).data;
+        console.log(data);
+
+        //console.log(JSON.parse(response).data.ldr);
+        // console.log(now - response.time_id);
+        //TEST DELIMITER PISAHIN STRING PAKEK COMMA
+        var datamasuk = String(data);
+        var fields = datamasuk.split(',');
+        var lat = fields[0];
+        var lon = fields[1];
+
+        // if(now - response.time_id >= 60){
+        // $('#temp').text("--.-");
+        // }
+        // else{
+        // $('#temp').text(response.temp);
+        // }
+      });
+    }
+
     var map;
-    var mapLat = -33.829357;
-		var mapLng = 150.961761;
+    var mapLat = lat;
+		var mapLng = lon;
     var mapDefaultZoom = 10;
     
     function initialize_map() {
@@ -54,7 +78,7 @@
 
   </script>
 </head>
-<body onload="initialize_map(); add_map_point(-33.8688, 151.2093);">
+<body onload="initialize_map();">
   <div id="map" style="width: 100vw; height: 100vh;"></div>
 </body>
 </html>
