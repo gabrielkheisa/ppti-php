@@ -68,44 +68,44 @@
             </a>
           </li>
           <li>
-            <a href="./icons.html">
-              <i class="tim-icons icon-atom" hidden></i>
+            <a hidden href="./icons.html">
+              <i class="tim-icons icon-atom"></i>
               <p>Icons</p>
             </a>
           </li>
           <li>
-            <a href="./map.html">
-              <i class="tim-icons icon-pin" hidden></i>
+            <a hidden href="./map.html">
+              <i class="tim-icons icon-pin"></i>
               <p>Maps</p>
             </a>
           </li>
           <li>
-            <a href="./notifications.html">
-              <i class="tim-icons icon-bell-55" hidden></i>
+            <a hidden href="./notifications.html">
+              <i class="tim-icons icon-bell-55"></i>
               <p>Notifications</p>
             </a>
           </li>
           <li>
-            <a href="./user.html">
-              <i class="tim-icons icon-single-02" hidden></i>
+            <a hidden href="./user.html">
+              <i class="tim-icons icon-single-02"></i>
               <p>User Profile</p>
             </a>
           </li>
           <li>
-            <a href="./tables.html">
-              <i class="tim-icons icon-puzzle-10" hidden></i>
+            <a hidden href="./tables.html">
+              <i class="tim-icons icon-puzzle-10"></i>
               <p>Table List</p>
             </a>
           </li>
           <li>
-            <a href="./typography.html">
-              <i class="tim-icons icon-align-center" hidden></i>
+            <a hidden href="./typography.html">
+              <i class="tim-icons icon-align-center"></i>
               <p>Typography</p>
             </a>
           </li>
           <li>
-            <a href="./rtl.html">
-              <i class="tim-icons icon-world" hidden></i>
+            <a hidden href="./rtl.html">
+              <i class="tim-icons icon-world"></i>
               <p>RTL Support</p>
             </a>
           </li>
@@ -265,7 +265,7 @@
               </div>
               <div class="card-body">
                 <div class="chart-area">
-                  <canvas id="CountryChart"></canvas>
+                  <canvas id="CountryChart" hidden></canvas>
                 </div>
               </div>
             </div>
