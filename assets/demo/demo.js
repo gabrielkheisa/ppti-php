@@ -497,11 +497,12 @@ demo = {
         const element3 = document.getElementById("teks-tabel3");
         element3.innerHTML = alt;
 
-        const element4 = document.getElementById("teks-tabel4");
-        element4.innerHTML = lat;
+        const latlon = lat + ',' + lon;
 
-        const element5 = document.getElementById("teks-tabel5");
-        element5.innerHTML = lon;
+        const element4 = document.getElementById("teks-tabel4");
+        element4.innerHTML = latlon;
+
+
 
         chart_data.unshift(temp);
         chart_data.pop();
