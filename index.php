@@ -276,7 +276,11 @@
                 <h5 class="card-category">Location</h5>
                 <h3 class="card-title"><i class="tim-icons icon-send text-success"></i> 12,100K</h3>
               </div>
-
+              <div hidden class="card-body">
+                <div class="chart-area">
+                  <canvas id="chartLineGreen"></canvas>
+                </div>
+              </div>
             <iframe src="/map.php" height="290px"></iframe>
               
             </div>
