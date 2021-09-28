@@ -41,7 +41,7 @@
 
 <body class="">
 
-<script src="assets/js/openstreetmaps.jss"></script>
+
 
   <div class="wrapper">
     <div class="sidebar">
@@ -280,7 +280,7 @@
               </div>
             </div>
           <div class="col-lg-4">
-            <div id="osm-map"></div>
+            <div id="mapdiv"></div>
           </div>
         </div>
         <div class="row">
@@ -778,6 +778,7 @@
         application: "black-dashboard-free"
       });
   </script>
+  <script src="http://www.openlayers.org/api/OpenLayers.js"></script>
 </body>
 
 </html>
