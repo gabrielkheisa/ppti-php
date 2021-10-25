@@ -503,7 +503,7 @@ demo = {
         element4.innerHTML = latlon;
 
         const datamentah = document.getElementById("datamentah");
-        datamentah.innerHTML = data;
+        datamentah.innerHTML = datamasuk;
 
 
         chart_data.unshift(temp);
