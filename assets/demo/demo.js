@@ -502,6 +502,8 @@ demo = {
         const element4 = document.getElementById("teks-tabel4");
         element4.innerHTML = latlon;
 
+        const datamentah = document.getElementById("datamentah");
+        element3.innerHTML = datamentah;
 
 
         chart_data.unshift(temp);

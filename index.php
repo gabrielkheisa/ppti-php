@@ -198,6 +198,7 @@
       <div class="content">
         <div class="row">
           <div class="col-12">
+             <div id="datamentah"></div>
             <div class="card card-chart">
               <div class="card-header ">
                 <div class="row">
