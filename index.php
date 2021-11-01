@@ -23,9 +23,9 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link rel="apple-touch-icon" sizes="76x76" href="assets/img/apple-icon.png">
-  <link rel="icon" type="image/png" href="assets/img/favicon.png">
+  <link rel="icon" type="image/png" href="assets/img/faviconZZZ.png">
   <title>
-    Black Dashboard by Creative Tim
+    Inflects EWS monitoring
   </title>
   <!--     Fonts and icons     -->
   <link href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,600,700,800" rel="stylesheet" />
@@ -347,8 +347,8 @@
                           </div>
                         </td>
                         <td>
-                          <p class="title">GDPR Compliance</p>
-                          <p class="text-muted">The GDPR is a regulation that requires businesses to protect the personal data and privacy of Europe citizens for transactions that occur within EU member states.</p>
+                          <p class="title">Inflects EWS dashboard</p>
+                          <p class="text-muted">Temperature, humidity, water level, and position monitoring</p>
                         </td>
                         <td class="td-actions text-right">
                           <button type="button" rel="tooltip" title="" class="btn btn-link" data-original-title="Edit Task">
