@@ -6,21 +6,7 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 	<link rel="stylesheet" href="https://openlayers.org/en/v4.6.5/css/ol.css" type="text/css">
 	<script src="https://openlayers.org/en/v4.6.5/build/ol.js" type="text/javascript"></script>
-  <script>
-        var settings = {
-      "url": "https://ppti-inf.herokuapp.com/GET/sensor3.php",
-      "method": "GET",
-      "timeout": 0,
-    };
 
-    var data = JSON.parse(settings);
-    var datamasuk = String(data);
-    var fields = datamasuk.split(',');
-    var mapLat = fields[0];
-    var mapLng = fields[1];
-
-  
-  </script>
   
   <script>
 
@@ -61,11 +47,11 @@
             })
         ],
         view: new ol.View({
-            center: ol.proj.fromLonLat([mapLng, mapLat]),
+            center: ol.proj.fromLonLat([<?php echo $TheLon__ ?>, <?php echo $TheLat__ ?>]),
             zoom: mapDefaultZoom
         })
       });
-      add_map_point(mapLat, mapLng);
+      
     }
 
 
@@ -73,7 +59,7 @@
 
   </script>
 </head>
-<body onload="initialize_map();">
+<body onload="initialize_map(); add_map_point(<?php echo $TheLat__ ?>,<?php echo $TheLon__ ?>)">
   <div id="map" style="width: 100vw; height: 100vh;"></div>
 </body>
 </html>

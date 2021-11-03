@@ -37,6 +37,7 @@
   <!-- CSS Just for demo purpose, don't include it in your project -->
   <link href="assets/demo/demo.css" rel="stylesheet" />
 
+
 	<link rel="stylesheet" href="https://openlayers.org/en/v4.6.5/css/ol.css" type="text/css">
 	<script src="https://openlayers.org/en/v4.6.5/build/ol.js" type="text/javascript"></script>
 
@@ -669,6 +670,16 @@
     };
   </script>
   <script src="assets/demo/demo.js"></script>
+  <!--  Parsing JS ke PHP dengan Cookie    -->
+  <script type="text/javascript">
+    document.cookie = "TheLat=lat; TheLon=lon";
+</script>
+<?php 
+   $TheLat_ =  $_COOKIE['TheLat'];
+   $TheLon_ =  $_COOKIE['TheLon'];
+   include 'memory.php';
+?>
+  
   <script>
     $(document).ready(function() {
       $().ready(function() {
