@@ -674,9 +674,7 @@
   </script>
   <script src="assets/demo/demo.js"></script>
   <!--  Parsing JS ke PHP dengan Cookie    -->
-  <script type="text/javascript">
-    document.cookie = "TheLat=lat; TheLon=lon";
-</script>
+
 <?php 
    $TheLat__ =  $_COOKIE['TheLat'];
    $TheLon__ =  $_COOKIE['TheLon'];
