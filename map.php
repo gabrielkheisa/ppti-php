@@ -7,7 +7,6 @@
 	<link rel="stylesheet" href="https://openlayers.org/en/v4.6.5/css/ol.css" type="text/css">
 	<script src="https://openlayers.org/en/v4.6.5/build/ol.js" type="text/javascript"></script>
   <?php 
-   include 'memory.php';
 ?>
 
   
@@ -50,7 +49,7 @@
             })
         ],
         view: new ol.View({
-            center: ol.proj.fromLonLat([<?php echo $TheLon__ ?>, <?php echo $TheLat__ ?>]),
+            center: ol.proj.fromLonLat([<?php echo $_GET['thelat'] ?>, <?php echo $_GET['thelon'] ?>]),
             zoom: mapDefaultZoom
         })
       });
@@ -62,7 +61,7 @@
 
   </script>
 </head>
-<body onload="initialize_map(); add_map_point(<?php echo $TheLat__ ?>,<?php echo $TheLon__ ?>)">
+<body onload="initialize_map();">
   <div id="map" style="width: 100vw; height: 100vh;"></div>
 </body>
 </html>
