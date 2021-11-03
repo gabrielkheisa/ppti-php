@@ -284,6 +284,9 @@
                 </div>
               </div>
             <iframe src="/map.php?thelat=<?php echo $TheLat__ ?>&thelon=<?php echo $TheLon__ ?>" height="255px"></iframe>
+            
+            <?php echo $TheLat__ ?>
+            <?php echo $TheLon__ ?>
               
             </div>
           <div class="col-lg-4">
