@@ -1,2 +1,2 @@
-$TheLat__ =  $TheLat_;
-$TheLon__ =  $TheLon_;
+$TheLat__ ;
+$TheLon__ ;

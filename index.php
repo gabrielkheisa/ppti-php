@@ -675,9 +675,10 @@
     document.cookie = "TheLat=lat; TheLon=lon";
 </script>
 <?php 
-   $TheLat_ =  $_COOKIE['TheLat'];
-   $TheLon_ =  $_COOKIE['TheLon'];
-   include 'memory.php';
+include 'memory.php';
+   $TheLat__ =  $_COOKIE['TheLat'];
+   $TheLon__ =  $_COOKIE['TheLon'];
+   
 ?>
   
   <script>
