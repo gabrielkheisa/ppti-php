@@ -19,30 +19,7 @@
     var mapLat = fields[0];
     var mapLng = fields[1];
 
-    var tid = setInterval(get_data, 2000);
-    function get_data() {
-      var now = new Date().getTime() / 1000;
-      $.ajax(settings).done(function (response) {
-        var data = JSON.parse(response).data;
-        console.log(data);
-
-        //console.log(JSON.parse(response).data.ldr);
-        // console.log(now - response.time_id);
-        //TEST DELIMITER PISAHIN STRING PAKEK COMMA
-        var datamasuk = String(data);
-        var fields = datamasuk.split(',');
-        var mapLat = fields[0];
-        var mapLng = fields[1];
-
-        // if(now - response.time_id >= 60){
-        // $('#temp').text("--.-");
-        // }
-        // else{
-        // $('#temp').text(response.temp);
-        // }
-      });
-    }
-
+  
   </script>
   
   <script>
