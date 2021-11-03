@@ -4,7 +4,7 @@ header("Content-Type: application/json; charset=UTF-8");
 $curl = curl_init();
 
 curl_setopt_array($curl, array(
-  CURLOPT_URL => 'https://platform.antares.id:8443/~/antares-cse/antares-id/Inflects/Poppeye/la',
+  CURLOPT_URL => 'https://platform.antares.id:8443/~/antares-cse/antares-id/1st_Scenario/L_Client_1',
   CURLOPT_RETURNTRANSFER => true,
   CURLOPT_ENCODING => '',
   CURLOPT_MAXREDIRS => 10,
@@ -13,7 +13,7 @@ curl_setopt_array($curl, array(
   CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
   CURLOPT_CUSTOMREQUEST => 'GET',
   CURLOPT_HTTPHEADER => array(
-    'X-M2M-Origin: fdb767ef250eca5e:16c2529590417d44',
+    'X-M2M-Origin: 52a19ea18612235c:Yay2tgC1RKGs5M2q',
     'Content-Type: application/json;ty=4',
     'Accept: application/json'
   ),
