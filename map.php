@@ -8,10 +8,16 @@
 	<script src="https://openlayers.org/en/v4.6.5/build/ol.js" type="text/javascript"></script>
   <script>
         var settings = {
-      "url": "https://ppti-inf.herokuapp.com/GET/",
+      "url": "https://ppti-inf.herokuapp.com/GET/sensor3.php",
       "method": "GET",
       "timeout": 0,
     };
+
+    var data = JSON.parse(settings);
+    var datamasuk = String(data);
+    var fields = datamasuk.split(',');
+    var mapLat = fields[0];
+    var mapLng = fields[1];
 
     var tid = setInterval(get_data, 2000);
     function get_data() {
