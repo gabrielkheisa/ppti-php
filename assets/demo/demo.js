@@ -464,11 +464,7 @@ demo = {
     };
     var myChartData = new Chart(ctx, config);
 
-    var settings = {
-      "url": "https://ppti-inf.herokuapp.com/GET/",
-      "method": "GET",
-      "timeout": 0,
-    };
+
 
     var tid = setInterval(get_data, 2000);
     function get_data() {

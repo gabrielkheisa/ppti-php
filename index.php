@@ -661,6 +661,13 @@
   <script src="assets/js/plugins/bootstrap-notify.js"></script>
   <!-- Control Center for Black Dashboard: parallax effects, scripts for the example pages etc -->
   <script src="assets/js/black-dashboard.min.js?v=1.0.0"></script><!-- Black Dashboard DEMO methods, don't include it in your project! -->
+  <script>
+      var settings = {
+      "url": "https://ppti-inf.herokuapp.com/GET/",
+      "method": "GET",
+      "timeout": 0,
+    };
+  </script>
   <script src="assets/demo/demo.js"></script>
   <script>
     $(document).ready(function() {
