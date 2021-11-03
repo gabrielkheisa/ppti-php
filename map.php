@@ -6,34 +6,20 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 	<link rel="stylesheet" href="https://openlayers.org/en/v4.6.5/css/ol.css" type="text/css">
 	<script src="https://openlayers.org/en/v4.6.5/build/ol.js" type="text/javascript"></script>
+  <script>
+
+  </script>
   
   <script>
     /* OSM & OL example code provided by https://mediarealm.com.au/ */
 
 
     var map;
-    var mapLat = -7.7711582;
-		var mapLng = 110.3733500;
+    var mapLat = -7.7998252;
+		var mapLng = 110.3985500;
     var mapDefaultZoom = 10;
-    
-    function initialize_map() {
-      map = new ol.Map({
-        target: "map",
-        layers: [
-            new ol.layer.Tile({
-                source: new ol.source.OSM({
-                      url: "https://a.tile.openstreetmap.org/{z}/{x}/{y}.png"
-                })
-            })
-        ],
-        view: new ol.View({
-            center: ol.proj.fromLonLat([mapLng, mapLat]),
-            zoom: mapDefaultZoom
-        })
-      });
-    }
 
-    function add_map_point(lat, lng) {
+    function add_map_point(Lat, Lng) {
       var vectorLayer = new ol.layer.Vector({
         source:new ol.source.Vector({
           features: [new ol.Feature({
@@ -52,11 +38,31 @@
 
       map.addLayer(vectorLayer); 
     }
+    
+    function initialize_map() {
+      map = new ol.Map({
+        target: "map",
+        layers: [
+            new ol.layer.Tile({
+                source: new ol.source.OSM({
+                      url: "https://a.tile.openstreetmap.org/{z}/{x}/{y}.png"
+                })
+            })
+        ],
+        view: new ol.View({
+            center: ol.proj.fromLonLat([mapLng, mapLat]),
+            zoom: mapDefaultZoom
+        })
+      });
+      add_map_point(mapLat, mapLng);
+    }
+
+
 
 
   </script>
 </head>
-<body onload="initialize_map(); add_map_point(-7.7711582, 110.3733500)">
+<body onload="initialize_map();">
   <div id="map" style="width: 100vw; height: 100vh;"></div>
 </body>
 </html>
