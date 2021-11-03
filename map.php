@@ -6,19 +6,15 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 	<link rel="stylesheet" href="https://openlayers.org/en/v4.6.5/css/ol.css" type="text/css">
 	<script src="https://openlayers.org/en/v4.6.5/build/ol.js" type="text/javascript"></script>
-  <?php 
-?>
-
   
   <script>
-
     /* OSM & OL example code provided by https://mediarealm.com.au/ */
 
 
     var map;
+    var mapLat = -7.7711582;
+		var mapLng = 110.3733500;
     var mapDefaultZoom = 10;
-
-
     
     function initialize_map() {
       map = new ol.Map({
@@ -31,13 +27,11 @@
             })
         ],
         view: new ol.View({
-            center: ol.proj.fromLonLat([<?php echo $_GET['thelat'] ?>, <?php echo $_GET['thelon'] ?>]),
+            center: ol.proj.fromLonLat([mapLng, mapLat]),
             zoom: mapDefaultZoom
         })
       });
-      
     }
-
 
     function add_map_point(lat, lng) {
       var vectorLayer = new ol.layer.Vector({
@@ -59,9 +53,10 @@
       map.addLayer(vectorLayer); 
     }
 
+
   </script>
 </head>
-<body onload="initialize_map(); add_map_point(<?php echo $_GET['thelat'] ?>, <?php echo $_GET['thelon'] ?>)">
+<body onload="initialize_map(); add_map_point(-7.7711582, 110.3733500)">
   <div id="map" style="width: 100vw; height: 100vh;"></div>
 </body>
 </html>
