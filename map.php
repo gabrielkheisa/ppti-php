@@ -19,7 +19,7 @@
 		var mapLng = 110.3985500;
     var mapDefaultZoom = 10;
 
-    function add_map_point(Lat, Lng) {
+    function add_map_point(lat, lng) {
       var vectorLayer = new ol.layer.Vector({
         source:new ol.source.Vector({
           features: [new ol.Feature({
