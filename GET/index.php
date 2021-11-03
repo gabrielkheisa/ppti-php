@@ -13,7 +13,7 @@ curl_setopt_array($curl, array(
   CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
   CURLOPT_CUSTOMREQUEST => 'GET',
   CURLOPT_HTTPHEADER => array(
-    'X-M2M-Origin: 52a19ea18612235c:Yay2tgC1RKGs5M2q',
+    'X-M2M-Origin: ad6774a8675765b0:ljKFx7ywStmxuLwf',
     'Content-Type: application/json;ty=4',
     'Accept: application/json'
   ),
