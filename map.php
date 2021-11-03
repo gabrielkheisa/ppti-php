@@ -7,16 +7,44 @@
 	<link rel="stylesheet" href="https://openlayers.org/en/v4.6.5/css/ol.css" type="text/css">
 	<script src="https://openlayers.org/en/v4.6.5/build/ol.js" type="text/javascript"></script>
   <script>
+        var settings = {
+      "url": "https://ppti-inf.herokuapp.com/GET/",
+      "method": "GET",
+      "timeout": 0,
+    };
+
+    var tid = setInterval(get_data, 2000);
+    function get_data() {
+      var now = new Date().getTime() / 1000;
+      $.ajax(settings).done(function (response) {
+        var data = JSON.parse(response).data;
+        console.log(data);
+
+        //console.log(JSON.parse(response).data.ldr);
+        // console.log(now - response.time_id);
+        //TEST DELIMITER PISAHIN STRING PAKEK COMMA
+        var datamasuk = String(data);
+        var fields = datamasuk.split(',');
+        var mapLat = fields[0];
+        var mapLng = fields[1];
+
+        // if(now - response.time_id >= 60){
+        // $('#temp').text("--.-");
+        // }
+        // else{
+        // $('#temp').text(response.temp);
+        // }
+      });
+    }
 
   </script>
   
   <script>
+
     /* OSM & OL example code provided by https://mediarealm.com.au/ */
 
 
     var map;
-    var mapLat = -7.7998252;
-		var mapLng = 110.3985500;
     var mapDefaultZoom = 10;
 
     function add_map_point(lat, lng) {
