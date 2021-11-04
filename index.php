@@ -628,18 +628,11 @@
           </ul>
           <div class="copyright">
      
-          <style type="text/css">   
-.logo_inflects {
-    background: url('assets/img/inflects.png');
-    height: 20px;
-    
-    display: block;
-    /* Other styles here */
-}
-</style>
 
 
-          <span class='logo_inflects'></span>app.infelects.xyz
+
+<img src="assets/img/inflects.png" style="height:40px;">
+
           </div>
         </div>
       </footer>
