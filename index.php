@@ -45,7 +45,31 @@
 
 <body class="" initialize_map(); >
 
-
+<style type="text/css">   
+    .loadbar
+    {
+         width:100%;
+         height:245px;
+         background-color:#333;
+         border:px solid #ccc;
+         position:relative; 
+      border-radius: 10px;
+      
+    }
+    .bar
+    {
+        width:100%;
+        display:block;        
+        font-family:arial;
+        font-size:12px; 
+        background-color:#cce;
+        color:#fff;       
+        position:absolute;
+        bottom:0;        
+      border-radius: 10px;
+      text-align:center;
+    }
+</style>
 
   <div class="wrapper">
     <div class="sidebar">
@@ -251,7 +275,14 @@
                 <h3 class="card-title"><i class="fas fa-tint"></i></h3>
                 <h4 id="teks-tabel2"></h4>
               </div>
-              <div class="card-body">
+              <div class="loadbar">
+              
+              <strong id="VerticalHumidityLevel" class="bar" style='height:0%; transition: width 2s, height 2s;'><h1 id=VerticalHumidityLevel_teks></h1></strong>
+              
+            </div>
+
+              <div class="card-body" hidden>
+
                 <div class="chart-area">
                   <canvas id="chartLinePurple"></canvas>
                 </div>
@@ -267,31 +298,7 @@
               </div>
 
 
-              <style type="text/css">   
-    .loadbar
-    {
-         width:100%;
-         height:245px;
-         background-color:#333;
-         border:px solid #ccc;
-         position:relative; 
-      border-radius: 10px;
-      
-    }
-    .bar
-    {
-        width:100%;
-        display:block;        
-        font-family:arial;
-        font-size:12px; 
-        background-color:#cce;
-        color:#fff;       
-        position:absolute;
-        bottom:0;        
-      border-radius: 10px;
-      text-align:center;
-    }
-</style>
+
               <div class="loadbar">
               
       <strong id="VerticalWaterLevel" class="bar" style='height:0%; transition: width 2s, height 2s;'><h1 id=VerticalWaterLevel_teks></h1></strong>

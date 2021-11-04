@@ -504,6 +504,10 @@ demo = {
         const element5 = document.getElementById("VerticalWaterLevel_teks");
         element5.innerHTML = alt + "m";
 
+        
+        const element6 = document.getElementById("VerticalHumidityLevel_teks");
+        element6.innerHTML = hum + "%";
+
         //cookie buat pindahin ke PHP
         function setCookie(cname, cvalue, exdays) {
           const d = new Date();
@@ -517,6 +521,7 @@ demo = {
         setCookie("WatLvl",String(alt),1);
 
         document.getElementById("VerticalWaterLevel").style.height = alt*5+"%";
+        document.getElementById("VerticalHumidityLevel").style.height = hum+"%";
 
 
 
