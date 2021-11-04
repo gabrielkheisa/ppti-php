@@ -283,7 +283,7 @@
                   <canvas id="chartLineGreen"></canvas>
                 </div>
               </div>
-            <iframe src="/map.php" height="255px"></iframe>
+            <iframe id="mapframe" src="/map.php" height="255px"></iframe>
             
 
               

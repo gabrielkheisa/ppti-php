@@ -512,6 +512,11 @@ demo = {
         setCookie("TheLat",String(lat),1);
         setCookie("TheLon",String(lon),1);
 
+        //auto refresh iframe open street maps
+        var frameRefreshInterval = setInterval(function() {
+          document.getElementById("mapframe").src = document.getElementById("mapframe").src
+      }, 2000);
+
 
         chart_data.unshift(temp);
         chart_data.pop();
