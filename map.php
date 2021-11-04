@@ -87,7 +87,7 @@
      map.addLayer(layer);
     }
 
-    add_map_point(4.35247, 50.84673);
+    
 
     var intervalId = window.setInterval(function(){
       /// call your function here
@@ -100,7 +100,7 @@
   
   </script>
 </head>
-<body onload="initialize_map();">
+<body onload="initialize_map(); add_map_point(4.35247, 50.84673)">
   <div id="map" style="width: 100vw; height: 100vh;"></div>
 </body>
 </html>
