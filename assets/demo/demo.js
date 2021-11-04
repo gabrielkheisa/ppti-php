@@ -531,10 +531,7 @@ demo = {
     }
 
 
-        //auto refresh iframe open street maps
-        var frameRefreshInterval = setInterval(function() {
-          document.getElementById("mapframe").src = document.getElementById("mapframe").src
-      }, 30000);
+
 
 
 

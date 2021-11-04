@@ -794,6 +794,12 @@
 
     });
   </script>
+  <script>
+          //auto refresh iframe open street maps
+          var frameRefreshInterval = setInterval(function() {
+          document.getElementById("mapframe").src = document.getElementById("mapframe").src
+      }, 30000);
+  </script>
   <script src="https://cdn.trackjs.com/agent/v3/latest/t.js"></script>
   <script>
     window.TrackJS &&
