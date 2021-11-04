@@ -75,23 +75,16 @@
     function add_map_point(lat, lng) {
       //TEST PRINT
       console.log(lat + " " + lng);
-      var vectorLayer = new ol.layer.Vector({
-        source:new ol.source.Vector({
-          features: [new ol.Feature({
-            geometry: new ol.geom.Point(ol.proj.fromLonLat([110.3985500,-7.7998252])),
-            })]
-        }),
-        style: new ol.style.Style({
-          image: new ol.style.Icon({
-            anchor: [0.5, 0.5],
-            anchorXUnits: "fraction",
-            anchorYUnits: "fraction",
-            src: "https://upload.wikimedia.org/wikipedia/commons/e/ec/RedDot.svg"
-          })
-        })
+      var layer = new ol.layer.Vector({
+      source: new ol.source.Vector({
+         features: [
+             new ol.Feature({
+                 geometry: new ol.geom.Point(ol.proj.fromLonLat([4.35247, 50.84673]))
+             })
+         ]
+      })
       });
-
-      map.addLayer(vectorLayer); 
+     map.addLayer(layer);
     }
 
     add_map_point(mapLat, mapLng);
