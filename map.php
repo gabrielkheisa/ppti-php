@@ -87,19 +87,24 @@
      map.addLayer(layer);
     }
 
-        function add_map_point2() {
-      //TEST PRINT
-      //console.log(lat + " " + lng);
-      var layer = new ol.layer.Vector({
-      source: new ol.source.Vector({
-         features: [
-             new ol.Feature({
-                 geometry: new ol.geom.Point(ol.proj.fromLonLat([mapLng, mapLat]))
-             })
-         ]
-      })
+    function add_map_point2() {
+      var vectorLayer = new ol.layer.Vector({
+        source:new ol.source.Vector({
+          features: [new ol.Feature({
+                geometry: new ol.geom.Point(ol.proj.transform([mapLng, mapLat], 'EPSG:4326', 'EPSG:3857')),
+            })]
+        }),
+        style: new ol.style.Style({
+          image: new ol.style.Icon({
+            anchor: [0.5, 0.5],
+            anchorXUnits: "fraction",
+            anchorYUnits: "fraction",
+            src: "https://upload.wikimedia.org/wikipedia/commons/e/ec/RedDot.svg"
+          })
+        })
       });
-     map.addLayer(layer);
+
+      map.addLayer(vectorLayer); 
     }
 
     
