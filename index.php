@@ -289,6 +289,7 @@
         bottom:0;        
       border-radius: 10px;
       text-align:center;
+      transition: width 2s;
     }
 </style>
               <div class="loadbar">
