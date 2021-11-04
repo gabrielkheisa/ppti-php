@@ -349,7 +349,35 @@ demo = {
       }
     };
 
+    var ctx = document.getElementById("chartLinePurple").getContext("2d");
 
+    var gradientStroke = ctx.createLinearGradient(0, 230, 0, 50);
+
+    gradientStroke.addColorStop(1, 'rgba(72,72,176,0.2)');
+    gradientStroke.addColorStop(0.2, 'rgba(72,72,176,0.0)');
+    gradientStroke.addColorStop(0, 'rgba(119,52,169,0)'); //purple colors
+
+    //KONFIGURASI CHART KELEMBAPAN
+    var data = {
+      labels: ['0', '1', '2', '3', '4', '5'],
+      datasets: [{
+        label: "Kelembapan",
+        fill: true,
+        backgroundColor: gradientStroke,
+        borderColor: '#d048b6',
+        borderWidth: 2,
+        borderDash: [],
+        borderDashOffset: 0.0,
+        pointBackgroundColor: '#d048b6',
+        pointBorderColor: 'rgba(255,255,255,0)',
+        pointHoverBackgroundColor: '#d048b6',
+        pointBorderWidth: 20,
+        pointHoverRadius: 4,
+        pointHoverBorderWidth: 15,
+        pointRadius: 4,
+        data: [0,0,0,0,0,0],
+      }]
+    };
 
     var myChart = new Chart(ctx, {
       type: 'line',
@@ -476,10 +504,6 @@ demo = {
         const element5 = document.getElementById("VerticalWaterLevel_teks");
         element5.innerHTML = alt + "m";
 
-        
-        const element6 = document.getElementById("VerticalHumidityLevel_teks");
-        element6.innerHTML = alt + "%";
-
         //cookie buat pindahin ke PHP
         function setCookie(cname, cvalue, exdays) {
           const d = new Date();
@@ -493,14 +517,14 @@ demo = {
         setCookie("WatLvl",String(alt),1);
 
         document.getElementById("VerticalWaterLevel").style.height = alt*5+"%";
-        document.getElementById("VerticalHumidityLevel").style.height = hum+"%";
 
 
 
 
         chart_data.unshift(temp);
         chart_data.pop();
-
+        chart_data2.unshift(hum);
+        chart_data2.pop();
         myChartData.update();
 
         // if(now - response.time_id >= 60){
