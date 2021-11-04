@@ -502,7 +502,7 @@ demo = {
         datamentah.innerHTML = datamasuk;
 
         //cookie buat pindahin ke PHP
-        document.cookie = "TheLat=lat; TheLon=lon";
+        document.cookie = "TheLat="+ lat + ";" + "TheLon=" + lon;
 
 
         chart_data.unshift(temp);

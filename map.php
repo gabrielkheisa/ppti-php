@@ -7,42 +7,12 @@
 	<link rel="stylesheet" href="https://openlayers.org/en/v4.6.5/css/ol.css" type="text/css">
 	<script src="https://openlayers.org/en/v4.6.5/build/ol.js" type="text/javascript"></script>
   
-  <script>
-      var settings = {
-      "url": "https://ppti-inf.herokuapp.com/GET/index3.php",
-      "method": "GET",
-      "timeout": 0,
-    };
-    // DATA BERSIFAT OBJEK
-    // console.log(settings);
-    function get_data() {
-      var now = new Date().getTime() / 1000;
-      $.ajax(settings).done(function (response) {
-        var data = JSON.parse(response).data;
-        //console.log(data);
+  <?php 
+   $TheLat__ =  $_COOKIE['TheLat'];
+   $TheLon__ =  $_COOKIE['TheLon'];
+?>
 
-        //console.log(JSON.parse(response).data.ldr);
-        // console.log(now - response.time_id);
-        //TEST DELIMITER PISAHIN STRING PAKEK COMMA
-        var datamasuk = String(data);
-        var fields = datamasuk.split(',');
-        var lat = fields[0];
-        var lon = fields[1];
-        var alt = fields[2];
-        var temp = fields[3];
-        var hum = fields[4];
 
-        console.log(datamasuk);
-
-        // if(now - response.time_id >= 60){
-        // $('#temp').text("--.-");
-        // }
-        // else{
-        // $('#temp').text(response.temp);
-        // }
-      });
-    }
-  </script>
 
   <script>
     /* OSM & OL example code provided by https://mediarealm.com.au/ */
@@ -93,7 +63,7 @@
 
   </script>
 </head>
-<body onload="initialize_map(); add_map_point(-7.7711582, 110.3733500)">
+<body onload="initialize_map(); add_map_point(<?php echo $TheLat__ ?>,<?php echo $TheLat__ ?>)">
   <div id="map" style="width: 100vw; height: 100vh;"></div>
 </body>
 </html>

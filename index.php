@@ -283,7 +283,7 @@
                   <canvas id="chartLineGreen"></canvas>
                 </div>
               </div>
-            <iframe src="/map.php?thelat=<?php echo $TheLat__ ?>&thelon=<?php echo $TheLon__ ?>" height="255px"></iframe>
+            <iframe src="/map.php" height="255px"></iframe>
             
 
               
@@ -674,10 +674,7 @@
   <script src="assets/demo/demo.js"></script>
   <!--  Parsing JS ke PHP dengan Cookie    -->
 
-<?php 
-   $TheLat__ =  $_COOKIE['TheLat'];
-   $TheLon__ =  $_COOKIE['TheLon'];
-?>
+
   
   <script>
     $(document).ready(function() {
