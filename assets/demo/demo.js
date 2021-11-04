@@ -510,7 +510,7 @@ demo = {
         }
 
         setCookie("TheLat",lat,1);
-        setCookie("TheLat",lon,1);
+        setCookie("TheLot",lon,1);
 
 
         chart_data.unshift(temp);
