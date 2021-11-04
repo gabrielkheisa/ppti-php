@@ -502,7 +502,15 @@ demo = {
         datamentah.innerHTML = datamasuk;
 
         //cookie buat pindahin ke PHP
-        document.cookie = "TheLat="+ lat + ";" + "TheLon=" + lon;
+        function setCookie(cname, cvalue, exdays) {
+          const d = new Date();
+          d.setTime(d.getTime() + (exdays*24*60*60*1000));
+          let expires = "expires="+ d.toUTCString();
+          document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+        }
+
+        setCookie("TheLat",lat,1);
+        setCookie("TheLat",lon,1);
 
 
         chart_data.unshift(temp);
