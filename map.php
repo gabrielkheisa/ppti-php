@@ -32,7 +32,7 @@
         var temp = fields[3];
         var hum = fields[4];
 
-        console.log(lat + "," + lon);
+        console.log(datamasuk);
 
         // if(now - response.time_id >= 60){
         // $('#temp').text("--.-");
