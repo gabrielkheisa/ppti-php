@@ -53,7 +53,7 @@
     var mapDefaultZoom = 10;
 
     //test print
-    console.log(mapLat + " " + mapLng);
+    //console.log(mapLat + " " + mapLng);
     
     function initialize_map() {
       map = new ol.Map({
@@ -73,6 +73,8 @@
     }
 
     function add_map_point(lat, lng) {
+      //TEST PRINT
+      console.log(lat + " " + lng);
       var vectorLayer = new ol.layer.Vector({
         source:new ol.source.Vector({
           features: [new ol.Feature({
