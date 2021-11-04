@@ -140,12 +140,12 @@
           </button>
           <div class="collapse navbar-collapse" id="navigation">
             <ul class="navbar-nav ml-auto">
-              <li class="search-bar input-group">
+              <li hidden class="search-bar input-group">
                 <button class="btn btn-link" id="search-button" data-toggle="modal" data-target="#searchModal"><i class="tim-icons icon-zoom-split" ></i>
                   <span class="d-lg-none d-md-block">Search</span>
                 </button>
               </li>
-              <li class="dropdown nav-item">
+              <li hidden class="dropdown nav-item">
                 <a href="javascript:void(0)" class="dropdown-toggle nav-link" data-toggle="dropdown">
                   <div class="notification d-none d-lg-block d-xl-block"></div>
                   <i class="tim-icons icon-sound-wave"></i>
@@ -161,7 +161,7 @@
                   <li class="nav-link"><a href="javascript:void(0)" class="nav-item dropdown-item">Another one</a></li>
                 </ul>
               </li>
-              <li class="dropdown nav-item">
+              <li hidden class="dropdown nav-item">
                 <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown">
                   <div class="photo">
                     <img src="assets/img/anime3.png" alt="Profile Photo">
@@ -209,7 +209,7 @@
                     <h3 id="teks-tabel"></h3>
                   </div>
                   <div class="col-sm-6">
-                    <div class="btn-group btn-group-toggle float-right" data-toggle="buttons">
+                    <div hidden class="btn-group btn-group-toggle float-right" data-toggle="buttons">
                       <label class="btn btn-sm btn-primary btn-simple active" id="0">
                         <input type="radio" name="options" checked>
                         <span class="d-none d-sm-block d-md-block d-lg-block d-xl-block">Graph 1</span>
@@ -610,28 +610,36 @@
       <footer class="footer">
         <div class="container-fluid">
           <ul class="nav">
-            <li class="nav-item">
+            <li hidden class="nav-item">
               <a href="javascript:void(0)" class="nav-link">
                 Creative Tim
               </a>
             </li>
-            <li class="nav-item">
+            <li hidden class="nav-item">
               <a href="javascript:void(0)" class="nav-link">
                 About Us
               </a>
             </li>
-            <li class="nav-item">
+            <li hidden class="nav-item">
               <a href="javascript:void(0)" class="nav-link">
                 Blog
               </a>
             </li>
           </ul>
           <div class="copyright">
-            ©
-            <script>
-              document.write(new Date().getFullYear())
-            </script>2018 made with <i class="tim-icons icon-heart-2"></i> by
-            <a href="javascript:void(0)" target="_blank">Creative Tim</a> for a better web.
+     
+          <style type="text/css">   
+.logo_inflects {
+    background: url('assets/img/inflects.png');
+    height: 20px;
+    
+    display: block;
+    /* Other styles here */
+}
+</style>
+
+
+          <span class='logo_inflects'></span>app.infelects.xyz
           </div>
         </div>
       </footer>
