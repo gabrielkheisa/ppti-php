@@ -276,6 +276,7 @@
          border:px solid #ccc;
          position:relative; 
       border-radius: 10px;
+      transition: width 2s, height 2s;
     }
     .bar
     {
@@ -289,7 +290,6 @@
         bottom:0;        
       border-radius: 10px;
       text-align:center;
-      transition: width 2s;
     }
 </style>
               <div class="loadbar">
