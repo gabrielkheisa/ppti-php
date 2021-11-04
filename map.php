@@ -79,7 +79,7 @@
       source: new ol.source.Vector({
          features: [
              new ol.Feature({
-                 geometry: new ol.geom.Point(ol.proj.fromLonLat([4.35247, 50.84673]))
+                 geometry: new ol.geom.Point(ol.proj.fromLonLat([lat, lng]))
              })
          ]
       })
@@ -87,7 +87,7 @@
      map.addLayer(layer);
     }
 
-    add_map_point(mapLat, mapLng);
+    add_map_point(4.35247, 50.84673);
 
     var intervalId = window.setInterval(function(){
       /// call your function here
