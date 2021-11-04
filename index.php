@@ -248,7 +248,7 @@
             <div class="card card-chart">
               <div class="card-header">
                 <h5 class="card-category">Humidity</h5>
-                <h3 class="card-title"><i class="tim-icons icon-bell-55 text-primary"></i></h3>
+                <h3 class="card-title"><i class="fas fa-tint"></i></h3>
                 <h4 id="teks-tabel2"></h4>
               </div>
               <div class="card-body">
@@ -262,7 +262,7 @@
             <div class="card card-chart">
               <div class="card-header">
                 <h5 class="card-category">Water Level</h5>
-                <h3 class="card-title"><i class="tim-icons icon-delivery-fast text-info"></i></h3>
+                <h3 class="card-title"><i class="fas fa-tint"></i></h3>
                 <h4 id="teks-tabel3"></h4>
               </div>
 
@@ -303,7 +303,7 @@
             <div class="card card-chart">
               <div class="card-header">
                 <h5 class="card-category">Location</h5>
-                <h3 class="card-title"><i class="tim-icons icon-send text-success"></i><p id="teks-tabel4"></p><p></p></h3>
+                <h3 class="card-title"><i class="fas fa-map-marker-alt"></i><p id="teks-tabel4"></p><p></p></h3>
               </div>
               <div hidden class="card-body">
                 <div class="chart-area">
