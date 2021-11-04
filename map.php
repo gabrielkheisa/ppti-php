@@ -76,7 +76,7 @@
       var vectorLayer = new ol.layer.Vector({
         source:new ol.source.Vector({
           features: [new ol.Feature({
-                geometry: new ol.geom.Point(ol.proj.fromLonLat([parseFloat(Number(lng)), parseFloat(Number(lat))])),
+                geometry: new ol.geom.Point(ol.proj.fromLonLat(lng, lat)])),
             })]
         }),
         style: new ol.style.Style({
