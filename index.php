@@ -265,7 +265,31 @@
                 <h3 class="card-title"><i class="tim-icons icon-delivery-fast text-info"></i></h3>
                 <h4 id="teks-tabel3"></h4>
               </div>
-              
+
+
+              <style type="text/css">   
+    .loadbar
+    {
+         width:100%;
+         height:200px;
+         background-color:#333;
+         border:px solid #ccc;
+         position:relative; 
+      border-radius: 10px;
+    }
+    .bar
+    {
+        width:100%;
+        display:block;        
+        font-family:arial;
+        font-size:12px; 
+        background-color:#cce;
+        color:#fff;       
+        position:absolute;
+        bottom:0;        
+      border-radius: 10px;
+    }
+</style>
               <div class="loadbar">
       <strong class="bar" style='height:30%;'></strong>
     </div>
