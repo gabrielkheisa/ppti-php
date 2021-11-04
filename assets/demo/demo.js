@@ -501,7 +501,7 @@ demo = {
         const datamentah = document.getElementById("datamentah");
         datamentah.innerHTML = datamasuk;
 
-        const element5 = document.getElementById("VerticalWaterLevel");
+        const element5 = document.getElementById("VerticalWaterLevel_teks");
         element5.innerHTML = alt + "m";
 
         //cookie buat pindahin ke PHP
