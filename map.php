@@ -34,12 +34,15 @@
 
 
     var map;
+    var mapLat;
+    var mapLng;
+
     if(parseFloat(Number(getCookie("TheLat"))) == 0){
       mapLat = -7.7998252;
       mapLng = 110.3985500;
     }
-    var mapLat = parseFloat(Number(getCookie("TheLat")));
-    var mapLng = parseFloat(Number(getCookie("TheLon")));
+    mapLat = parseFloat(Number(getCookie("TheLat")));
+    mapLng = parseFloat(Number(getCookie("TheLon")));
 
     var mapDefaultZoom = 10;
 
