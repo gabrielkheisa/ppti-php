@@ -515,7 +515,7 @@ demo = {
         //auto refresh iframe open street maps
         var frameRefreshInterval = setInterval(function() {
           document.getElementById("mapframe").src = document.getElementById("mapframe").src
-      }, 2000);
+      }, 30000);
 
 
         chart_data.unshift(temp);
