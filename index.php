@@ -292,7 +292,7 @@
     }
 </style>
               <div class="loadbar">
-      <strong id="VerticalWaterLevel" class="bar" style='height:0%'><h1><?php echo $_COOKIE['WatLvl']; ?>m</h1></strong>
+      <strong id="VerticalWaterLevel" class="bar" style='height:0%'><h1></h1></strong>
     </div>
             </div>
           </div>
