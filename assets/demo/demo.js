@@ -505,8 +505,8 @@ demo = {
         element5.innerHTML = alt + "m";
 
         
-        const element5 = document.getElementById("VerticalHumidityLevel_teks");
-        element5.innerHTML = alt + "%";
+        const element6 = document.getElementById("VerticalHumidityLevel_teks");
+        element6.innerHTML = alt + "%";
 
         //cookie buat pindahin ke PHP
         function setCookie(cname, cvalue, exdays) {
@@ -528,8 +528,7 @@ demo = {
 
         chart_data.unshift(temp);
         chart_data.pop();
-        chart_data2.unshift(hum);
-        chart_data2.pop();
+
         myChartData.update();
 
         // if(now - response.time_id >= 60){
