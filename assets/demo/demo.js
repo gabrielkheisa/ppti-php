@@ -511,6 +511,7 @@ demo = {
 
         setCookie("TheLat",String(lat),1);
         setCookie("TheLon",String(lon),1);
+        setCookie("WatLvl",String(alt),1);
 
 
 

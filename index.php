@@ -288,10 +288,11 @@
         position:absolute;
         bottom:0;        
       border-radius: 10px;
+      text-align:center;
     }
 </style>
               <div class="loadbar">
-      <strong class="bar" style='height:30%;'></strong>
+      <strong class="bar" style='height:<?php echo $_COOKIE['WatLvl']*5; ?>'><h1><?php echo $_COOKIE['WatLvl']; ?>m</h1></strong>
     </div>
             </div>
           </div>
