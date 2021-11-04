@@ -61,7 +61,7 @@
     console.log(mapLat + " " + mapLng);
     
     function initialize_map() {
-      map = ol.Map({
+      map = new ol.Map({
         target: "map",
         layers: [
             new ol.layer.Tile({
@@ -70,7 +70,7 @@
                 })
             })
         ],
-        view: ol.View({
+        view: new ol.View({
             center: ol.proj.fromLonLat([mapLng, mapLat]),
             zoom: mapDefaultZoom
         })
@@ -81,7 +81,7 @@
       var vectorLayer = new ol.layer.Vector({
         source:new ol.source.Vector({
           features: [new ol.Feature({
-                geometry: new ol.geom.Point(ol.proj.transform([parseFloat(Number(lng)), parseFloat(Number(lat))], 'EPSG:4326', 'EPSG:3857')),
+                geometry: new ol.geom.Point(ol.proj.fromLonLat([parseFloat(Number(lng)), parseFloat(Number(lat))])),
             })]
         }),
         style: new ol.style.Style({
@@ -99,8 +99,9 @@
 
     var intervalId = window.setInterval(function(){
       /// call your function here
-      initialize_map()
-      add_map_point(mapLat, mapLng)
+      //initialize_map()
+      //add_map_point(mapLat, mapLng)
+      
     
       }   , 2000);
 
