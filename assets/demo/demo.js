@@ -471,7 +471,7 @@ demo = {
       var now = new Date().getTime() / 1000;
       $.ajax(settings).done(function (response) {
         var data = JSON.parse(response).data;
-        console.log(data);
+        //console.log(data);
 
         //console.log(JSON.parse(response).data.ldr);
         // console.log(now - response.time_id);

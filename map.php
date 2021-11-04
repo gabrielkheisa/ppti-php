@@ -8,6 +8,15 @@
 	<script src="https://openlayers.org/en/v4.6.5/build/ol.js" type="text/javascript"></script>
   
   <script>
+      var settings = {
+      "url": "https://ppti-inf.herokuapp.com/GET/index3.php",
+      "method": "GET",
+      "timeout": 0,
+    };
+    console.log(settings);
+  </script>
+
+  <script>
     /* OSM & OL example code provided by https://mediarealm.com.au/ */
 
 
