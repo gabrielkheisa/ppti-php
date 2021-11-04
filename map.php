@@ -78,7 +78,7 @@
       map.addLayer(vectorLayer); 
     }
 
-    add_map_point(getCookie("TheLat"), getCookie("TheLon"));
+   
 
 
   </script>
