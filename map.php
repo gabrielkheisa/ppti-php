@@ -46,14 +46,9 @@
     var mapLat;
     var mapLng;
 
-    if(parseFloat(Number(getCookie("TheLat"))) <= 0.1 || parseFloat(Number(getCookie("TheLat"))) >= -0.1){
-      mapLat = -7.5407791;
-      mapLng = 110.4454026;
-    }
-    else{
+
     mapLat = parseFloat(Number(getCookie("TheLat")));
     mapLng = parseFloat(Number(getCookie("TheLon")));
-    }
 
     var mapDefaultZoom = 10;
 
@@ -96,6 +91,8 @@
 
       map.addLayer(vectorLayer); 
     }
+
+    add_map_point(mapLat, mapLng);
 
     var intervalId = window.setInterval(function(){
       /// call your function here
