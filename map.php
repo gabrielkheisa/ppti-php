@@ -34,8 +34,8 @@
 
 
     var map;
-    var mapLat = getCookie("TheLat");
-		var mapLng = getCookie("TheLon");
+    var mapLat = parseFloat(getCookie("TheLat"));
+		var mapLng = parseFloat(getCookie("TheLon"));
     var mapDefaultZoom = 10;
 
     //test print
