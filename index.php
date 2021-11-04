@@ -276,7 +276,7 @@
          border:px solid #ccc;
          position:relative; 
       border-radius: 10px;
-      transition: width 2s, height 2s;
+      
     }
     .bar
     {
@@ -294,7 +294,7 @@
 </style>
               <div class="loadbar">
               <h1>
-      <strong id="VerticalWaterLevel" class="bar" style='height:0%'></strong>
+      <strong id="VerticalWaterLevel" class="bar" style='height:0%; transition: width 2s, height 2s;'></strong>
       </h1>
     </div>
             </div>
