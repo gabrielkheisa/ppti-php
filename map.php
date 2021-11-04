@@ -13,7 +13,35 @@
       "method": "GET",
       "timeout": 0,
     };
-    console.log(settings);
+    // DATA BERSIFAT OBJEK
+    // console.log(settings);
+    function get_data() {
+      var now = new Date().getTime() / 1000;
+      $.ajax(settings).done(function (response) {
+        var data = JSON.parse(response).data;
+        //console.log(data);
+
+        //console.log(JSON.parse(response).data.ldr);
+        // console.log(now - response.time_id);
+        //TEST DELIMITER PISAHIN STRING PAKEK COMMA
+        var datamasuk = String(data);
+        var fields = datamasuk.split(',');
+        var lat = fields[0];
+        var lon = fields[1];
+        var alt = fields[2];
+        var temp = fields[3];
+        var hum = fields[4];
+
+        console.log(lat + "," + lon);
+
+        // if(now - response.time_id >= 60){
+        // $('#temp').text("--.-");
+        // }
+        // else{
+        // $('#temp').text(response.temp);
+        // }
+      });
+    }
   </script>
 
   <script>
