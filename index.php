@@ -86,7 +86,7 @@
           </a>
         </div>
         <ul class="nav">
-          <li class="active ">
+          <li>
             <a href="./sensor1.php">
               <i class="tim-icons icon-chart-pie-36"></i>
               <p>Sensor 1</p>
