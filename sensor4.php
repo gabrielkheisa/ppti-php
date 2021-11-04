@@ -701,7 +701,7 @@
   <script src="assets/js/black-dashboard.min.js?v=1.0.0"></script><!-- Black Dashboard DEMO methods, don't include it in your project! -->
   <script>
       var settings = {
-      "url": "https://ppti-inf.herokuapp.com/GET/sensor3.php",
+      "url": "https://ppti-inf.herokuapp.com/GET/sensor4.php",
       "method": "GET",
       "timeout": 0,
     };
