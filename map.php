@@ -10,10 +10,6 @@
   <?php 
    $TheLat__ =  $_COOKIE['TheLat'];
    $TheLon__ =  $_COOKIE['TheLon'];
-   //test ECHO
-   //echo $TheLat__;
-   //echo $TheLon__;
-   //WORKS COOKIE NYA
 ?>
 
 
@@ -23,8 +19,8 @@
 
 
     var map;
-    var mapLat = -7.7711582;
-		var mapLng = 110.3733500;
+    var mapLat = <?php echo $_COOKIE['TheLat'];?>;
+		var mapLng = <?php echo $_COOKIE['TheLon'];?>;
     var mapDefaultZoom = 10;
     
     function initialize_map() {
@@ -38,7 +34,7 @@
             })
         ],
         view: new ol.View({
-            center: ol.proj.fromLonLat(<?php echo $_COOKIE['TheLon'];?>, <?php echo $_COOKIE['TheLat'];?>]),
+            center: ol.proj.fromLonLat([mapLng, mapLat]),
             zoom: mapDefaultZoom
         })
       });
