@@ -50,7 +50,7 @@
     mapLat = parseFloat(Number(getCookie("TheLat")));
     mapLng = parseFloat(Number(getCookie("TheLon")));
 
-    var mapDefaultZoom = 10;
+    var mapDefaultZoom = 13;
 
     //test print
     //console.log(mapLat + " " + mapLng);
