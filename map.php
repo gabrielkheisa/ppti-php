@@ -81,7 +81,7 @@
   
   </script>
 </head>
-<body onload="initialize_map(); add_map_point(<?php echo $_COOKIE['TheLat'];?>, <?php echo $_COOKIE['TheLon'];?>)">
+<body onload="initialize_map(); add_map_point(<?php echo $TheLat__;?>, <?php echo $TheLon__;?>)">
   <div id="map" style="width: 100vw; height: 100vh;"></div>
 </body>
 </html>
