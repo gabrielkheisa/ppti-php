@@ -34,6 +34,10 @@
 
 
     var map;
+    if(parseFloat(Number(getCookie("TheLat"))) == 0){
+      mapLat = -7.7998252;
+      mapLng = 110.3985500;
+    }
     var mapLat = parseFloat(Number(getCookie("TheLat")));
     var mapLng = parseFloat(Number(getCookie("TheLon")));
 
