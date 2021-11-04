@@ -87,56 +87,56 @@
         </div>
         <ul class="nav">
           <li class="active ">
-            <a href="./dashboard.html">
+            <a href="./sensor1.php">
               <i class="tim-icons icon-chart-pie-36"></i>
-              <p>Dashboard</p>
+              <p>Sensor 1</p>
             </a>
           </li>
           <li>
-            <a hidden href="./icons.html">
-              <i class="tim-icons icon-atom"></i>
-              <p>Icons</p>
+            <a href="./sensor2.php">
+              <i class="tim-icons icon-chart-pie-36"></i>
+              <p>Sensor 2</p>
             </a>
           </li>
           <li>
-            <a hidden href="./map.html">
-              <i class="tim-icons icon-pin"></i>
-              <p>Maps</p>
+            <a href="./sensor3.php">
+              <i class="tim-icons icon-chart-pie-36"></i>
+              <p>Sensor 3</p>
             </a>
           </li>
           <li>
-            <a hidden href="./notifications.html">
-              <i class="tim-icons icon-bell-55"></i>
-              <p>Notifications</p>
+            <a href="./sensor4.php">
+              <i class="tim-icons icon-chart-pie-36"></i>
+              <p>Sensor 4</p>
             </a>
           </li>
           <li>
             <a hidden href="./user.html">
-              <i class="tim-icons icon-single-02"></i>
+              <i class="tim-icons icon-chart-pie-36"></i>
               <p>User Profile</p>
             </a>
           </li>
           <li>
             <a hidden href="./tables.html">
-              <i class="tim-icons icon-puzzle-10"></i>
+              <i class="tim-icons icon-chart-pie-36"></i>
               <p>Table List</p>
             </a>
           </li>
           <li>
             <a hidden href="./typography.html">
-              <i class="tim-icons icon-align-center"></i>
+              <i class="tim-icons icon-chart-pie-36"></i>
               <p>Typography</p>
             </a>
           </li>
           <li>
             <a hidden href="./rtl.html">
-              <i class="tim-icons icon-world"></i>
+              <i class="tim-icons icon-chart-pie-36"></i>
               <p>RTL Support</p>
             </a>
           </li>
           <li class="active-pro">
-            <a href="./upgrade.html">
-              <i class="tim-icons icon-spaceship"></i>
+            <a hidden href="./upgrade.html">
+              <i class="tim-icons icon-chart-pie-36"></i>
               <p>Upgrade to PRO</p>
             </a>
           </li>
