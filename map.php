@@ -97,10 +97,12 @@
       map.addLayer(vectorLayer); 
     }
 
+    var intervalId = window.setInterval(function(){
+      /// call your function here
+      initialize_map()
+      add_map_point(mapLat, mapLng)
     
-
-    setInterval( initialize_map(), 2000);
-    setInterval( add_map_point(mapLat, mapLng), 2000);
+      }   , 2000);
 
   
   </script>
