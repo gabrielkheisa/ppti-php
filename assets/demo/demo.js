@@ -516,7 +516,7 @@ demo = {
         setCookie("TheLon",String(lon),1);
         setCookie("WatLvl",String(alt),1);
 
-        document.getElementById("VerticalWaterLevel").style.height = alt*5;
+        document.getElementById("VerticalWaterLevel").style.height = alt*5+"%";
 
 
 
