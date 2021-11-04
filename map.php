@@ -34,8 +34,9 @@
 
 
     var map;
-    var mapLat = Number(getCookie("TheLat"));
-		var mapLng = Number(getCookie("TheLon"));
+    var mapLat = Number.parseFloat(getCookie("TheLat"));
+    var mapLng = Number.parseFloat(getCookie("TheLon"));
+
     var mapDefaultZoom = 10;
 
     //test print
@@ -77,6 +78,8 @@
 
       map.addLayer(vectorLayer); 
     }
+
+    add_map_point(mapLat, mapLng);
 
   
   </script>
