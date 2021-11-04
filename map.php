@@ -61,7 +61,7 @@
     console.log(mapLat + " " + mapLng);
     
     function initialize_map() {
-      map = new ol.Map({
+      map = ol.Map({
         target: "map",
         layers: [
             new ol.layer.Tile({
@@ -70,7 +70,7 @@
                 })
             })
         ],
-        view: new ol.View({
+        view: ol.View({
             center: ol.proj.fromLonLat([mapLng, mapLat]),
             zoom: mapDefaultZoom
         })
