@@ -509,8 +509,8 @@ demo = {
           document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
         }
 
-        setCookie("TheLat",lat,1);
-        setCookie("TheLot",lon,1);
+        setCookie("TheLat",String(lat),1);
+        setCookie("TheLon",String(lon),1);
 
 
         chart_data.unshift(temp);
