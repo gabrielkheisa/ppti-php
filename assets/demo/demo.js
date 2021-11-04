@@ -359,7 +359,7 @@ demo = {
 
     //KONFIGURASI CHART KELEMBAPAN
     var data = {
-      labels: ['0', '2', '4', '6', '8', '10'],
+      labels: ['0', '1', '2', '3', '4', '5'],
       datasets: [{
         label: "Kelembapan",
         fill: true,
