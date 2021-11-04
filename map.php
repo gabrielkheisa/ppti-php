@@ -11,8 +11,9 @@
    $TheLat__ =  $_COOKIE['TheLat'];
    $TheLon__ =  $_COOKIE['TheLon'];
    //test ECHO
-   echo $TheLat__;
-   echo $TheLon__;
+   //echo $TheLat__;
+   //echo $TheLon__;
+   //WORKS COOKIE NYA
 ?>
 
 
@@ -37,7 +38,7 @@
             })
         ],
         view: new ol.View({
-            center: ol.proj.fromLonLat([mapLng, mapLat]),
+            center: ol.proj.fromLonLat(<?php echo $_COOKIE['TheLon'];?>, <?php echo $_COOKIE['TheLat'];?>]),
             zoom: mapDefaultZoom
         })
       });
