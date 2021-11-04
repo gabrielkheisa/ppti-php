@@ -16,11 +16,26 @@
 
   <script>
     /* OSM & OL example code provided by https://mediarealm.com.au/ */
+  function getCookie(cname) {
+  let name = cname + "=";
+  let decodedCookie = decodeURIComponent(document.cookie);
+  let ca = decodedCookie.split(';');
+  for(let i = 0; i <ca.length; i++) {
+    let c = ca[i];
+    while (c.charAt(0) == ' ') {
+      c = c.substring(1);
+    }
+    if (c.indexOf(name) == 0) {
+      return c.substring(name.length, c.length);
+    }
+  }
+  return "";
+}
 
 
     var map;
-    var mapLat = <?php echo $_COOKIE['TheLat'];?>;
-		var mapLng = <?php echo $_COOKIE['TheLon'];?>;
+    var mapLat = getCookie("TheLat");
+		var mapLng = getCookie("TheLon");
     var mapDefaultZoom = 10;
     
     function initialize_map() {
@@ -63,7 +78,7 @@
 
   </script>
 </head>
-<body onload="initialize_map(); add_map_point(<?php echo $_COOKIE['TheLat'];?>,<?php $_COOKIE['TheLon']; ?>)">
+<body onload="initialize_map(); add_map_point( getCookie("TheLat"), getCookie("TheLon") )">
   <div id="map" style="width: 100vw; height: 100vh;"></div>
 </body>
 </html>
