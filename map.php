@@ -94,7 +94,7 @@
       source: new ol.source.Vector({
          features: [
              new ol.Feature({
-                 geometry: new ol.geom.Point(ol.proj.fromLonLat([mapLon, mapLat]))
+                 geometry: new ol.geom.Point(ol.proj.fromLonLat([mapLng, mapLat]))
              })
          ]
       })
