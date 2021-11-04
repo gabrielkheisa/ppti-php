@@ -271,7 +271,7 @@
     .loadbar
     {
          width:100%;
-         height:200px;
+         height:245px;
          background-color:#333;
          border:px solid #ccc;
          position:relative; 
