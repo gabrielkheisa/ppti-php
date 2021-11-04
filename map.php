@@ -120,7 +120,7 @@
   
   </script>
 </head>
-<body onload="initialize_map(); add_map_point2()">
+<body onload="setTimeout(() => { initialize_map(); add_map_point2();}, 5000);">
   <div id="map" style="width: 100vw; height: 100vh;"></div>
 </body>
 </html>
