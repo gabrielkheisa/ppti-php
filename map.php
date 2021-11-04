@@ -14,8 +14,17 @@
 
 
 
+
+
   <script>
     /* OSM & OL example code provided by https://mediarealm.com.au/ */
+
+
+
+
+
+
+
   function getCookie(cname) {
   let name = cname + "=";
   let decodedCookie = decodeURIComponent(document.cookie);
@@ -38,8 +47,8 @@
     var mapLng;
 
     if(parseFloat(Number(getCookie("TheLat"))) <= 0.1 || parseFloat(Number(getCookie("TheLat"))) >= -0.1){
-      mapLat = -7.7998252;
-      mapLng = 110.3985500;
+      mapLat = -7.5407791;
+      mapLng = 110.4454026;
     }
     else{
     mapLat = parseFloat(Number(getCookie("TheLat")));
@@ -88,7 +97,10 @@
       map.addLayer(vectorLayer); 
     }
 
-    add_map_point(mapLat, mapLng);
+    
+
+    setInterval( initialize_map(), 2000);
+    setInterval( add_map_point(mapLat, mapLng), 2000);
 
   
   </script>
