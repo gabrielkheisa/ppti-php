@@ -291,8 +291,8 @@
       text-align:center;
     }
 </style>
-              <div class="loadbar" id="VerticalWaterLevel">
-      <strong class="bar" style='height:<?php echo $_COOKIE['WatLvl']*5; ?>'><h1><?php echo $_COOKIE['WatLvl']; ?>m</h1></strong>
+              <div class="loadbar">
+      <strong id="VerticalWaterLevel" class="bar" style='height:0%'><h1><?php echo $_COOKIE['WatLvl']; ?>m</h1></strong>
     </div>
             </div>
           </div>
@@ -822,10 +822,6 @@
           //auto refresh iframe open street maps
           var frameRefreshInterval = setInterval(function() {
           document.getElementById("mapframe").src = document.getElementById("mapframe").src
-      }, 30000);
-          //auto refresh water level
-          var frameRefreshInterval2 = setInterval(function() {
-          document.getElementById("VerticalWaterLevel").src = document.getElementById("VerticalWaterLevel").src
       }, 30000);
   </script>
   <script src="https://cdn.trackjs.com/agent/v3/latest/t.js"></script>

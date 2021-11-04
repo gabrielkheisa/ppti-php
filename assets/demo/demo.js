@@ -501,6 +501,9 @@ demo = {
         const datamentah = document.getElementById("datamentah");
         datamentah.innerHTML = datamasuk;
 
+        const element5 = document.getElementById("VerticalWaterLevel");
+        element5.innerHTML = alt + "m";
+
         //cookie buat pindahin ke PHP
         function setCookie(cname, cvalue, exdays) {
           const d = new Date();
@@ -512,6 +515,8 @@ demo = {
         setCookie("TheLat",String(lat),1);
         setCookie("TheLon",String(lon),1);
         setCookie("WatLvl",String(alt),1);
+
+        document.getElementById("VerticalWaterLevel").style.height = alt*5;
 
 
 
