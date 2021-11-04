@@ -37,6 +37,9 @@
     var mapLat = getCookie("TheLat");
 		var mapLng = getCookie("TheLon");
     var mapDefaultZoom = 10;
+
+    //test print
+    console.log(mapLat + " " + mapLng);
     
     function initialize_map() {
       map = new ol.Map({
