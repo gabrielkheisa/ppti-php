@@ -37,12 +37,14 @@
     var mapLat;
     var mapLng;
 
-    if(parseFloat(Number(getCookie("TheLat"))) == 0){
+    if(parseFloat(Number(getCookie("TheLat"))) <= 0.1 || >= -0.1){
       mapLat = -7.7998252;
       mapLng = 110.3985500;
     }
+    else{
     mapLat = parseFloat(Number(getCookie("TheLat")));
     mapLng = parseFloat(Number(getCookie("TheLon")));
+    }
 
     var mapDefaultZoom = 10;
 
