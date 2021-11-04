@@ -375,7 +375,7 @@ demo = {
         pointHoverRadius: 4,
         pointHoverBorderWidth: 15,
         pointRadius: 4,
-        data: [0,0,0,0,0,0],
+        data: chart_data2,
       }]
     };
 
@@ -463,6 +463,7 @@ demo = {
       options: gradientChartOptionsConfigurationWithTooltipPurple
     };
     var myChartData = new Chart(ctx, config);
+    var myChartData2 = new Chart(ctx, data);
 
 
 
@@ -526,6 +527,7 @@ demo = {
         chart_data2.unshift(hum);
         chart_data2.pop();
         myChartData.update();
+        myChartData2.update();
 
         // if(now - response.time_id >= 60){
         // $('#temp').text("--.-");
