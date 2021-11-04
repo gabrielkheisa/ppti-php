@@ -251,21 +251,6 @@
                 <h3 class="card-title"><i class="fas fa-tint"></i></h3>
                 <h4 id="teks-tabel2"></h4>
               </div>
-              <div class="card-body">
-                <div class="chart-area">
-                  <canvas id="chartLinePurple"></canvas>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4">
-            <div class="card card-chart">
-              <div class="card-header">
-                <h5 class="card-category">Water Level</h5>
-                <h3 class="card-title"><i class="fas fa-tint"></i></h3>
-                <h4 id="teks-tabel3"></h4>
-              </div>
-
 
               <style type="text/css">   
     .loadbar
@@ -292,6 +277,23 @@
       text-align:center;
     }
 </style>
+
+              <strong id="VerticalHumidityLevel" class="bar" style='height:0%; transition: width 2s, height 2s;'><h1 id=VerticalHumidity_teks></h1></strong>
+
+
+
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="card card-chart">
+              <div class="card-header">
+                <h5 class="card-category">Water Level</h5>
+                <h3 class="card-title"><i class="fas fa-tint"></i></h3>
+                <h4 id="teks-tabel3"></h4>
+              </div>
+
+
+       
               <div class="loadbar">
               
       <strong id="VerticalWaterLevel" class="bar" style='height:0%; transition: width 2s, height 2s;'><h1 id=VerticalWaterLevel_teks></h1></strong>
