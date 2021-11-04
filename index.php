@@ -265,11 +265,10 @@
                 <h3 class="card-title"><i class="tim-icons icon-delivery-fast text-info"></i></h3>
                 <h4 id="teks-tabel3"></h4>
               </div>
-              <div class="card-body">
-                <div class="chart-area">
-                  <canvas id="CountryChart" hidden></canvas>
-                </div>
-              </div>
+              
+              <div class="loadbar">
+      <strong class="bar" style='height:30%;'></strong>
+    </div>
             </div>
           </div>
           <div class="col-lg-4">
