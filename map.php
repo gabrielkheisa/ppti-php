@@ -78,6 +78,8 @@
       map.addLayer(vectorLayer); 
     }
 
+    add_map_point(mapLat, mapLng);
+
    
 
 
