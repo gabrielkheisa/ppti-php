@@ -62,7 +62,7 @@
       var vectorLayer = new ol.layer.Vector({
         source:new ol.source.Vector({
           features: [new ol.Feature({
-                geometry: new ol.geom.Point(ol.proj.transform([Number(lng), Number(lat)], 'EPSG:4326', 'EPSG:3857')),
+                geometry: new ol.geom.Point(ol.proj.transform([parseFloat(lng), parseFloat(lat)], 'EPSG:4326', 'EPSG:3857')),
             })]
         }),
         style: new ol.style.Style({
@@ -78,14 +78,10 @@
       map.addLayer(vectorLayer); 
     }
 
-    add_map_point(mapLat, mapLng);
-
-   
-
-
+  
   </script>
 </head>
-<body onload="initialize_map()">
+<body onload="initialize_map(); add_map_point(<?php $_COOKIE['TheLat'];?>, <?php $_COOKIE['TheLon'];?>);">
   <div id="map" style="width: 100vw; height: 100vh;"></div>
 </body>
 </html>
