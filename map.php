@@ -37,7 +37,7 @@
     var mapLat;
     var mapLng;
 
-    if(parseFloat(Number(getCookie("TheLat"))) <= 0.1 || Number(getCookie("TheLat"))) >= -0.1){
+    if(parseFloat(Number(getCookie("TheLat"))) <= 0.1 || parseFloat(Number(getCookie("TheLat"))) >= -0.1){
       mapLat = -7.7998252;
       mapLng = 110.3985500;
     }
