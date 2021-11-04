@@ -74,12 +74,27 @@
 
     function add_map_point(lat, lng) {
       //TEST PRINT
-      console.log(lat + " " + lng);
+      //console.log(lat + " " + lng);
       var layer = new ol.layer.Vector({
       source: new ol.source.Vector({
          features: [
              new ol.Feature({
                  geometry: new ol.geom.Point(ol.proj.fromLonLat([lat, lng]))
+             })
+         ]
+      })
+      });
+     map.addLayer(layer);
+    }
+
+        function add_map_point2() {
+      //TEST PRINT
+      //console.log(lat + " " + lng);
+      var layer = new ol.layer.Vector({
+      source: new ol.source.Vector({
+         features: [
+             new ol.Feature({
+                 geometry: new ol.geom.Point(ol.proj.fromLonLat([mapLon, mapLat]))
              })
          ]
       })
@@ -100,7 +115,7 @@
   
   </script>
 </head>
-<body onload="initialize_map(); add_map_point(4.35247, 50.84673)">
+<body onload="initialize_map(); add_map_point2()">
   <div id="map" style="width: 100vw; height: 100vh;"></div>
 </body>
 </html>
