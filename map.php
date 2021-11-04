@@ -10,6 +10,9 @@
   <?php 
    $TheLat__ =  $_COOKIE['TheLat'];
    $TheLon__ =  $_COOKIE['TheLon'];
+   //test ECHO
+   echo $TheLat__;
+   echo $TheLon__;
 ?>
 
 
