@@ -63,7 +63,7 @@
 
   </script>
 </head>
-<body onload="initialize_map(); add_map_point(<?php echo $TheLat__ ?>,<?php echo $TheLat__ ?>)">
+<body onload="initialize_map(); add_map_point(<?php echo $_COOKIE['TheLat'];?>,<?php $_COOKIE['TheLon']; ?>)">
   <div id="map" style="width: 100vw; height: 100vh;"></div>
 </body>
 </html>
