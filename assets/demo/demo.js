@@ -485,13 +485,13 @@ demo = {
         var hum = fields[4];
 
         const element = document.getElementById("teks-tabel");
-        element.innerHTML = temp;
+        element.innerHTML = temp+"&deg;C";
 
         const element2 = document.getElementById("teks-tabel2");
-        element2.innerHTML = hum;
+        element2.innerHTML = hum+"%";
 
         const element3 = document.getElementById("teks-tabel3");
-        element3.innerHTML = alt;
+        element3.innerHTML = alt+"m";
 
         const latlon = lat + ',' + lon;
 

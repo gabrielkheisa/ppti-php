@@ -229,7 +229,7 @@
                 <div class="row">
                   <div class="col-sm-6 text-left">
                     <h5 class="card-category">Temperature</h5>
-                    <h2 class="card-title">in degree celcius<br></h2>
+                    
                     <h3 id="teks-tabel"></h3>
                   </div>
                   <div class="col-sm-6">
