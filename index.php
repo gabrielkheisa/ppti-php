@@ -293,7 +293,9 @@
     }
 </style>
               <div class="loadbar">
-      <strong id="VerticalWaterLevel" class="bar" style='height:0%'><h1></h1></strong>
+              <h1>
+      <strong id="VerticalWaterLevel" class="bar" style='height:0%'></strong>
+      </h1>
     </div>
             </div>
           </div>
