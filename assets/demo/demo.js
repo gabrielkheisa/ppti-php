@@ -523,10 +523,10 @@ demo = {
         document.getElementById("VerticalWaterLevel").style.height = alt*20+"%";
         //batas bahaya 3.75m
         if(alt>=3.75){
-          document.getElementById("VerticalWaterLevel").style.background-color = "#e55";
+          document.getElementById("VerticalWaterLevel").style.backgroundColor = "#e55";
         }
         else{
-          document.getElementById("VerticalWaterLevel").style.background-color = "#cce";
+          document.getElementById("VerticalWaterLevel").style.backgroundColor = "#cce";
         }
         document.getElementById("VerticalHumidityLevel").style.height = hum+"%";
 
