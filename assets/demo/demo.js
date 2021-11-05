@@ -530,6 +530,8 @@ demo = {
         }
         document.getElementById("VerticalHumidityLevel").style.height = hum+"%";
 
+        document.getElementById("VerticalHumidityLevel").style.backgroundColor = "#cce";
+
 
 
 
