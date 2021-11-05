@@ -520,7 +520,14 @@ demo = {
         setCookie("TheLon",String(lon),1);
         setCookie("WatLvl",String(alt),1);
 
-        document.getElementById("VerticalWaterLevel").style.height = alt*5+"%";
+        document.getElementById("VerticalWaterLevel").style.height = alt*20+"%";
+        //batas bahaya 3.75m
+        if(alt>=3.75){
+          document.getElementById("VerticalWaterLevel").style.background-color = "#e55";
+        }
+        else{
+          document.getElementById("VerticalWaterLevel").style.background-color = "#cce";
+        }
         document.getElementById("VerticalHumidityLevel").style.height = hum+"%";
 
 

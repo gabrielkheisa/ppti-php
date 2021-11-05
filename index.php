@@ -62,12 +62,15 @@
         display:block;        
         font-family:arial;
         font-size:12px; 
-        background-color:#cce;
-        color:#fff;       
+        background-color:#77e;
+        color:#dde;       
         position:absolute;
         bottom:0;        
       border-radius: 10px;
       text-align:center;
+      -webkit-transition: 
+		   background-color 700ms linear,
+			   color 700ms linear;
     }
 </style>
 
