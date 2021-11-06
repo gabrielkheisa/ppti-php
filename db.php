@@ -11,7 +11,7 @@
       echo "Opened database successfully\n";
    }
 
-   $date = date('Y-m-d H:i:s', strtotime('Wed, 21 Jul 2010 00:28:50 GMT'));
+   $date = date('Y-m-d H:i:s', date('Y-m-d H:i:s'));
    
 
    $sql =<<<EOF
