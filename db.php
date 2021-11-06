@@ -16,7 +16,7 @@
 
    $sql =<<<EOF
 
-   INSERT INTO "Sensor1" ("Suhu","Kelembapan","WaterLevel","Lat","Lon","".$date."")
+   INSERT INTO "Sensor1" ("Suhu","Kelembapan","WaterLevel","Lat","Lon","$date")
    VALUES ('1', '1', '1', '1', '1', '. "" .');
 
 EOF;
