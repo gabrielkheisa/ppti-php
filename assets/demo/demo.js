@@ -25,6 +25,8 @@ function setCookie(cname, cvalue, exdays) {
    document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
 }
 
+document.getElementById("DarkLightMode").className = getCookie("LightDark");
+
 demo = {
   initPickColor: function () {
     $('.pick-class-label').click(function () {
@@ -554,7 +556,7 @@ demo = {
         document.getElementById("VerticalHumidityLevel").style.backgroundColor = "#cce";
 
         
-        document.getElementById("DarkLightMode").className = getCookie("LightDark");
+        
 
 
 
@@ -577,7 +579,8 @@ demo = {
     
 
     
-    function LightDarkState(Number(state)){
+    function LightDarkState(state){
+      Number(state);
       if(state == 0){
         document.getElementById("DarkLightModet").className = "";
         setCookie("LightDark",String(""),1);
