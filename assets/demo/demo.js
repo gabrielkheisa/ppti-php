@@ -577,14 +577,14 @@ demo = {
     
 
     
-    function LightDarkState(state){
+    function LightDarkState(Number(state)){
       if(state == 0){
         document.getElementById("DarkLightModet").className = "";
-        setCookie("LightDark",String(0),1);
+        setCookie("LightDark",String(""),1);
       }
       else{
         document.getElementById("DarkLightMode").className = "white-content";
-        setCookie("LightDark",String(1),1);
+        setCookie("LightDark",String("white-content"),1);
       }
     }
 
