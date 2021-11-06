@@ -12,7 +12,7 @@
    }
    
    date_default_timezone_set('Asia/Jakarta'); # UTC is just an example
-   echo date('Y-m-d H:i:s');
+   
 
    $time = date('Y-m-d H:i:s');
    
