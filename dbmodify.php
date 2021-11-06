@@ -30,9 +30,24 @@ EOF;
 
 $ret2 = pg_query($db, $sql2);
 
+
+$sql3 =<<<EOF
+UPDATE "Sensor1" set "Last?" = '0' where "id" = '$ret2';
+EOF;
+
+pg_query($db, $sql3);
+
+$ret2 = $ret2 + 1;
+
 if($ret2 == '11'){
    $ret2 == '1';
 }
+
+$sql77 =<<<EOF
+UPDATE "Sensor1" set "Last?" = '1' where "id" = '$ret2';
+EOF;
+
+pg_query($db, $sql77);
 
 $sql =<<<EOF
 UPDATE "Sensor1" set "Time" = '$time' where "Last?"= '$ret2';
