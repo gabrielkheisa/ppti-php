@@ -41,11 +41,9 @@
 	<link rel="stylesheet" href="https://openlayers.org/en/v4.6.5/css/ol.css" type="text/css">
 	<script src="https://openlayers.org/en/v4.6.5/build/ol.js" type="text/javascript"></script>
 
-  <script src="assets/demo/demo.js"></script>
-
 </head>
 
-<body id="DarkLightMode" class="" initialize_map(); >
+<body class="" initialize_map(); >
 
 <style type="text/css">   
     .loadbar
@@ -668,10 +666,10 @@
           </a>
         </li>
         <li class="adjustments-line text-center color-change">
-          <span class="color-label" onclick="LightDarkState(1)">LIGHT MODE</span>
+          <span class="color-label">LIGHT MODE</span>
           <span class="badge light-badge mr-2"></span>
           <span class="badge dark-badge ml-2"></span>
-          <span class="color-label" onclick="LightDarkState(0)">DARK MODE</span>
+          <span class="color-label">DARK MODE</span>
         </li>
         <li class="button-container">
           <a href="https://www.creative-tim.com/product/black-dashboard" target="_blank" class="btn btn-primary btn-block btn-round">Download Now</a>
@@ -711,7 +709,7 @@
       "timeout": 0,
     };
   </script>
-  
+  <script src="assets/demo/demo.js"></script>
   <!--  Parsing JS ke PHP dengan Cookie    -->
 
 

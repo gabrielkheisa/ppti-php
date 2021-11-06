@@ -1,32 +1,5 @@
 type = ['primary', 'info', 'success', 'warning', 'danger'];
 
-
-function getCookie(cname) {
-  let name = cname + "=";
-  let decodedCookie = decodeURIComponent(document.cookie);
-  let ca = decodedCookie.split(';');
-  for(let i = 0; i <ca.length; i++) {
-    let c = ca[i];
-    while (c.charAt(0) == ' ') {
-      c = c.substring(1);
-    }
-    if (c.indexOf(name) == 0) {
-      return c.substring(name.length, c.length);
-    }
-  }
-  return "";
-}
-
-//cookie buat pindahin ke PHP
-function setCookie(cname, cvalue, exdays) {
-  const d = new Date();
-  d.setTime(d.getTime() + (exdays*24*60*60*1000));
-  let expires = "expires="+ d.toUTCString();
-   document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
-}
-
-document.getElementById("DarkLightMode").className = String(getCookie("LightDark"));
-
 demo = {
   initPickColor: function () {
     $('.pick-class-label').click(function () {
@@ -535,9 +508,13 @@ demo = {
         const element6 = document.getElementById("VerticalHumidityLevel_teks");
         element6.innerHTML = hum + "%";
 
-        
-
-
+        //cookie buat pindahin ke PHP
+        function setCookie(cname, cvalue, exdays) {
+          const d = new Date();
+          d.setTime(d.getTime() + (exdays*24*60*60*1000));
+          let expires = "expires="+ d.toUTCString();
+          document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+        }
 
         setCookie("TheLat",String(lat),1);
         setCookie("TheLon",String(lon),1);
@@ -555,9 +532,6 @@ demo = {
 
         document.getElementById("VerticalHumidityLevel").style.backgroundColor = "#cce";
 
-        
-        
-
 
 
 
@@ -574,21 +548,6 @@ demo = {
         // $('#temp').text(response.temp);
         // }
       });
-    }
-
-    
-
-    
-    function LightDarkState(state){
-      Number(state);
-      if(state == 0){
-        document.getElementById("DarkLightModet").className = "";
-        setCookie("LightDark",String(""),1);
-      }
-      else{
-        document.getElementById("DarkLightMode").className = "white-content";
-        setCookie("LightDark",String("white-content"),1);
-      }
     }
 
 
