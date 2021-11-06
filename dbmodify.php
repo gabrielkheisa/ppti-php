@@ -50,7 +50,7 @@ EOF;
 pg_query($db, $sql77);
 
 $sql =<<<EOF
-UPDATE "Sensor1" set "Time" = '$time' where "Last?"= '$ret2';
+UPDATE "Sensor1" set "Time" = '$time' where "Last?"= '1';
 EOF;
 
 
