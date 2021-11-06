@@ -25,7 +25,7 @@ function setCookie(cname, cvalue, exdays) {
    document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
 }
 
-document.getElementById("DarkLightMode").className = getCookie("LightDark");
+document.getElementById("DarkLightMode").className = String(getCookie("LightDark"));
 
 demo = {
   initPickColor: function () {
