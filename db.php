@@ -11,9 +11,12 @@
       echo "Opened database successfully\n";
    }
 
+   $date = date('Y-m-d H:i:s', strtotime('Wed, 21 Jul 2010 00:28:50 GMT'));
+   
+
    $sql =<<<EOF
 
-   INSERT INTO "Sensor1" ("Suhu","Kelembapan","WaterLevel","Lat","Lon","".$name."")
+   INSERT INTO "Sensor1" ("Suhu","Kelembapan","WaterLevel","Lat","Lon","".$date."")
    VALUES ('1', '1', '1', '1', '1', '. "" .');
 
 EOF;
