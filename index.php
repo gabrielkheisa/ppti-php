@@ -41,6 +41,8 @@
 	<link rel="stylesheet" href="https://openlayers.org/en/v4.6.5/css/ol.css" type="text/css">
 	<script src="https://openlayers.org/en/v4.6.5/build/ol.js" type="text/javascript"></script>
 
+  <script src="assets/demo/demo.js"></script>
+
 </head>
 
 <body id="DarkLightMode" class="" initialize_map(); >
@@ -709,7 +711,7 @@
       "timeout": 0,
     };
   </script>
-  <script src="assets/demo/demo.js"></script>
+  
   <!--  Parsing JS ke PHP dengan Cookie    -->
 
 
