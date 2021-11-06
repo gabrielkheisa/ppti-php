@@ -13,7 +13,7 @@
 
    $sql =<<<EOF
 
-   INSERT INTO COMPANY (Suhu,Kelembapan,WaterLevel,Lat,Lon,Time)
+   INSERT INTO Sensor1 (Suhu,Kelembapan,WaterLevel,Lat,Lon,Time)
    VALUES (1, 'Paul', 32, 'California', 20000.00 , 0);
 
 EOF;
