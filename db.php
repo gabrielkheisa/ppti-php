@@ -10,4 +10,19 @@
    } else {
       echo "Opened database successfully\n";
    }
+
+   $sql =<<<EOF
+
+   INSERT INTO COMPANY (Suhu,Kelembapan,WaterLevel,Lat,Lon,Time)
+   VALUES (1, 'Paul', 32, 'California', 20000.00 , 0);
+
+EOF;
+
+$ret = pg_query($db, $sql);
+if(!$ret) {
+   echo pg_last_error($db);
+} else {
+   echo "Records created successfully\n";
+}
+pg_close($db);
 ?>
