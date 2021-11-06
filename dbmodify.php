@@ -21,12 +21,24 @@
    //INSERT INTO "Sensor1" ("Suhu","Kelembapan","WaterLevel","Lat","Lon","Time","Last?")
    //VALUES ('1', '1', '1', '1', '1', '$time','1');
 
-   $sql =<<<EOF
 
-   
-   UPDATE "Sensor1" set "Time" = '$time' where Last=1;
 
+
+$sql2 =<<<EOF
+SELECT "id" from "Sensor1" where "Last?"="1";
 EOF;
+
+$ret2 = pg_query($db, $sql2);
+
+if($ret2 == '11'){
+   $ret2 == '1';
+}
+
+$sql =<<<EOF
+UPDATE "Sensor1" set "Time" = '$time' where "Last?"= '$ret2';
+EOF;
+
+
 
 $ret = pg_query($db, $sql);
 if(!$ret) {
