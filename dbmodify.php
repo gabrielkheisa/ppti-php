@@ -28,7 +28,8 @@ $sql2 =<<<EOF
 SELECT "id" from "Sensor1" where "Last?"="1";
 EOF;
 
-$ret2 = pg_query($db, $sql2);
+$aaa2 = pg_query($db, $sql2);
+$ret2 = pg_fetch_row($aaa2);
 
 
 $sql3 =<<<EOF
