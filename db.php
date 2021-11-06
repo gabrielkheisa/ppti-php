@@ -11,6 +11,8 @@
       echo "Opened database successfully\n";
    }
 
+   echo date('Y-m-d H:i:s');
+
    $date = date('Y-m-d H:i:s', date('Y-m-d H:i:s'));
    
 
