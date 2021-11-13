@@ -28,11 +28,15 @@ $sql2 =<<<EOF
 SELECT "id" from "Sensor1" where "Last?"="1";
 EOF;
 
+
+// kyknya error di sini, echo "Retrived value : " gak mau jalan
 $aaa2 = pg_query($db, $sql2);
 $ret2 = pg_fetch_result($aaa2);
 
 //test point
 echo "Retrived value : " + $ret2;
+
+$ret2 = intval($ret2);
 
 
 $sql3 =<<<EOF
@@ -42,6 +46,7 @@ EOF;
 pg_query($db, $sql3);
 
 $ret2 = $ret2 + 1;
+$ret2 = strval($ret2);
 
 if($ret2 == '11'){
    $ret2 == '1';
