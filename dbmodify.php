@@ -33,6 +33,9 @@ EOF;
 $aaa2 = pg_query($db, $sql2);
 $ret2 = pg_fetch_result($aaa2);
 
+var_dump($aaa2);
+var_dump($ret2;
+
 //test point
 echo "Retrived value : " + $ret2;
 
