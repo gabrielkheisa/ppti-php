@@ -31,10 +31,15 @@ EOF;
 
 // kyknya error di sini, echo "Retrived value : " gak mau jalan
 $aaa2 = pg_query($db, $sql2);
+// test echo
+echo $aaa2;
 $ret2 = pg_fetch_result($aaa2);
+// test echo
+echo $ret2;
 
-var_dump($aaa2);
-var_dump($ret2);
+
+//var_dump($aaa2);
+//var_dump($ret2);
 
 //test point
 echo "Retrived value : " + $ret2;
