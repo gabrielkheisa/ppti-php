@@ -320,7 +320,7 @@
                   <canvas id="chartLineGreen"></canvas>
                 </div>
               </div>
-            <iframe id="mapframe" src="/map.php" height="255px"></iframe>
+            <iframe id="mapframe" src="/map.php" height="255px" style="border-radius:10px;"></iframe>
             
 
               
